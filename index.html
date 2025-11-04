@@ -3,227 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title">Research Group Homepage</title>
+    <title data-i18n="title">LUCK Research Group</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="LUCK Research Group - Advancing knowledge through innovative research in artificial intelligence, machine learning, and computer vision">
+    <meta property="og:title" content="LUCK Research Group">
+    <meta property="og:description" content="Advancing knowledge through innovative research in AI, ML, and computer vision">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#2563eb">
 </head>
 <body>
+    <!-- Header Navigation -->
     <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <h1 class="lab-name" data-i18n="lab.name">Research Lab</h1>
-            </div>
-            <div class="nav-menu">
-                <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
-                <a href="#research" class="nav-link" data-i18n="nav.research">Research</a>
-                <a href="#members" class="nav-link" data-i18n="nav.members">Members</a>
-                <a href="#publications" class="nav-link" data-i18n="nav.publications">Publications</a>
-                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
-                <div class="language-switch">
-                    <button class="lang-btn active" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="zh">中文</button>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <span class="logo-text">LUCK</span>
+                        </div>
+                    </div>
+                    <h1 class="brand-name" data-i18n="lab.name">Research Group</h1>
                 </div>
-            </div>
-            <div class="mobile-menu-toggle">
-                <i class="fas fa-bars"></i>
+
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
+                    <a href="#research" class="nav-link" data-i18n="nav.research">Research</a>
+                    <a href="#team" class="nav-link" data-i18n="nav.team">Team</a>
+                    <a href="#publications" class="nav-link" data-i18n="nav.publications">Publications</a>
+                    <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                    <div class="language-toggle">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="zh">中文</button>
+                    </div>
+                </div>
+
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-container">
+            <a href="#home" class="mobile-nav-link active" data-i18n="nav.home">Home</a>
+            <a href="#research" class="mobile-nav-link" data-i18n="nav.research">Research</a>
+            <a href="#team" class="mobile-nav-link" data-i18n="nav.team">Team</a>
+            <a href="#publications" class="mobile-nav-link" data-i18n="nav.publications">Publications</a>
+            <a href="#contact" class="mobile-nav-link" data-i18n="nav.contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title" data-i18n="hero.title">Welcome to Our Research Group</h1>
-                    <p class="hero-subtitle" data-i18n="hero.subtitle">Advancing knowledge through innovative research and collaboration</p>
-                    <div class="hero-buttons">
-                        <a href="#research" class="btn btn-primary" data-i18n="hero.researchBtn">Our Research</a>
-                        <a href="#contact" class="btn btn-secondary" data-i18n="hero.contactBtn">Join Us</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="lab-logo-placeholder">
-                        <i class="fas fa-flask"></i>
-                        <span data-i18n="lab.logoAlt">Lab Logo</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title" data-i18n="about.title">About Our Lab</h2>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p class="about-description" data-i18n="about.description">
-                            We are a interdisciplinary research group dedicated to advancing the frontiers of knowledge
-                            through innovative research methodologies and collaborative approaches.
-                        </p>
-                        <div class="about-highlights">
-                            <div class="highlight-item">
-                                <i class="fas fa-microscope"></i>
-                                <div>
-                                    <h3 data-i18n="about.focus1.title">Cutting-edge Research</h3>
-                                    <p data-i18n="about.focus1.desc">Pioneering new approaches and methodologies</p>
-                                </div>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-users"></i>
-                                <div>
-                                    <h3 data-i18n="about.focus2.title">Collaborative Environment</h3>
-                                    <p data-i18n="about.focus2.desc">Working together across disciplines</p>
-                                </div>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-graduation-cap"></i>
-                                <div>
-                                    <h3 data-i18n="about.focus3.title">Educational Excellence</h3>
-                                    <p data-i18n="about.focus3.desc">Mentoring the next generation</p>
-                                </div>
-                            </div>
+                    <h1 class="hero-title" data-i18n="hero.title">Welcome to LUCK Research Group</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">Advancing knowledge through innovative research in artificial intelligence and computer vision</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-i18n="stats.members">20+</span>
+                            <span class="stat-label" data-i18n="stats.membersLabel">Researchers</span>
                         </div>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number" data-i18n="stats.members">15+</span>
-                            <span class="stat-label" data-i18n="stats.membersLabel">Members</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-i18n="stats.publications">50+</span>
+                        <div class="stat">
+                            <span class="stat-number" data-i18n="stats.publications">80+</span>
                             <span class="stat-label" data-i18n="stats.publicationsLabel">Publications</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-i18n="stats.projects">10+</span>
+                        <div class="stat">
+                            <span class="stat-number" data-i18n="stats.projects">15+</span>
                             <span class="stat-label" data-i18n="stats.projectsLabel">Projects</span>
                         </div>
                     </div>
+                    <div class="hero-buttons">
+                        <a href="#research" class="btn btn-primary" data-i18n="hero.researchBtn">Our Research</a>
+                        <a href="#contact" class="btn btn-outline" data-i18n="hero.contactBtn">Join Us</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-graphic">
+                        <div class="floating-shape shape-1"></div>
+                        <div class="floating-shape shape-2"></div>
+                        <div class="floating-shape shape-3"></div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Research Areas -->
-        <section id="research" class="section section-alt">
-            <div class="container">
+    <!-- Research Section -->
+    <section id="research" class="research-section">
+        <div class="container">
+            <div class="section-header">
                 <h2 class="section-title" data-i18n="research.title">Research Areas</h2>
-                <div class="research-grid" id="researchAreas">
-                    <!-- Research areas will be populated from data.js -->
+                <p class="section-subtitle" data-i18n="research.subtitle">Exploring the frontiers of AI and computer vision</p>
+            </div>
+            <div class="research-grid" id="researchAreas">
+                <!-- Research areas will be populated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="team.title">Our Team</h2>
+                <p class="section-subtitle" data-i18n="team.subtitle">Meet the brilliant minds behind our research</p>
+            </div>
+
+            <div class="team-tabs">
+                <button class="tab-btn active" data-category="faculty" data-i18n="team.faculty">Faculty</button>
+                <button class="tab-btn" data-category="students" data-i18n="team.students">Students</button>
+                <button class="tab-btn" data-category="alumni" data-i18n="team.alumni">Alumni</button>
+            </div>
+
+            <div class="team-container">
+                <div class="team-grid faculty-grid" id="facultyTeam">
+                    <!-- Faculty members will be populated dynamically -->
+                </div>
+                <div class="team-grid students-grid" id="studentTeam">
+                    <!-- Students will be populated dynamically -->
+                </div>
+                <div class="team-grid alumni-grid" id="alumniTeam" style="display: none;">
+                    <!-- Alumni will be populated dynamically -->
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Members Section -->
-        <section id="members" class="section">
-            <div class="container">
-                <h2 class="section-title" data-i18n="members.title">Our Members</h2>
-
-                <div class="members-section">
-                    <h3 class="subsection-title" data-i18n="members.faculty.title">Faculty</h3>
-                    <div class="members-grid" id="facultyMembers">
-                        <!-- Faculty members will be populated from data.js -->
-                    </div>
-                </div>
-
-                <div class="members-section">
-                    <h3 class="subsection-title" data-i18n="members.students.title">Students</h3>
-                    <div class="members-grid" id="studentMembers">
-                        <!-- Student members will be populated from data.js -->
-                    </div>
-                </div>
-
-                <div class="members-section">
-                    <h3 class="subsection-title" data-i18n="members.alumni.title">Alumni</h3>
-                    <div class="members-grid" id="alumniMembers">
-                        <!-- Alumni will be populated from data.js -->
-                    </div>
-                </div>
+    <!-- Publications Section -->
+    <section id="publications" class="publications-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="publications.title">Recent Publications</h2>
+                <p class="section-subtitle" data-i18n="publications.subtitle">Our latest contributions to the field</p>
             </div>
-        </section>
 
-        <!-- Publications Section -->
-        <section id="publications" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title" data-i18n="publications.title">Selected Publications</h2>
-                <div class="publications-filter">
+            <div class="publications-controls">
+                <div class="filter-buttons">
                     <button class="filter-btn active" data-filter="all" data-i18n="publications.filter.all">All</button>
-                    <button class="filter-btn" data-filter="journal" data-i18n="publications.filter.journal">Journal Articles</button>
-                    <button class="filter-btn" data-filter="conference" data-i18n="publications.filter.conference">Conference Papers</button>
+                    <button class="filter-btn" data-filter="journal" data-i18n="publications.filter.journal">Journals</button>
+                    <button class="filter-btn" data-filter="conference" data-i18n="publications.filter.conference">Conferences</button>
+                    <button class="filter-btn" data-filter="workshop" data-i18n="publications.filter.workshop">Workshops</button>
                 </div>
-                <div class="publications-list" id="publicationsList">
-                    <!-- Publications will be populated from data.js -->
-                </div>
-                <div class="publications-more">
-                    <a href="#" class="btn btn-outline" data-i18n="publications.viewAll">View All Publications</a>
+                <div class="sort-controls">
+                    <label data-i18n="publications.sort">Sort by:</label>
+                    <select id="sortPublications">
+                        <option value="year" data-i18n="publications.sort.year">Year</option>
+                        <option value="citations" data-i18n="publications.sort.citations">Citations</option>
+                        <option value="title" data-i18n="publications.sort.title">Title</option>
+                    </select>
                 </div>
             </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 class="section-title" data-i18n="contact.title">Contact Us</h2>
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h3 data-i18n="contact.address.title">Address</h3>
-                                <p data-i18n="contact.address.content">Department of Computer Science<br>University Name<br>City, State 12345</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
+            <div class="publications-list" id="publicationsList">
+                <!-- Publications will be populated dynamically -->
+            </div>
+
+            <div class="publications-more">
+                <a href="#" class="btn btn-outline" data-i18n="publications.viewAll">View All Publications</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">Join our research community</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
-                            <div>
-                                <h3 data-i18n="contact.email.title">Email</h3>
-                                <p><a href="mailto:lab@university.edu" data-i18n="contact.email.content">lab@university.edu</a></p>
-                            </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h3 data-i18n="contact.phone.title">Phone</h3>
-                                <p data-i18n="contact.phone.content">+1 (555) 123-4567</p>
-                            </div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact.email.title">Email</h3>
+                            <p><a href="mailto:contact@luck-group.edu" data-i18n="contact.email.content">contact@luck-group.edu</a></p>
                         </div>
                     </div>
-                    <div class="contact-form">
-                        <h3 data-i18n="contact.join.title">Join Our Team</h3>
-                        <p data-i18n="contact.join.description">We are always looking for talented students and researchers to join our group.</p>
-                        <a href="mailto:lab@university.edu?subject=Inquiry about joining the research group" class="btn btn-primary" data-i18n="contact.join.btn">Apply Now</a>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact.location.title">Location</h3>
+                            <p data-i18n="contact.location.content">Department of Computer Science<br>Your University<br>City, Country</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact.phone.title">Phone</h3>
+                            <p data-i18n="contact.phone.content">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta">
+                    <h3 data-i18n="contact.join.title">Join Our Team</h3>
+                    <p data-i18n="contact.join.description">We are always looking for talented students and researchers to join our group.</p>
+                    <a href="mailto:contact@luck-group.edu?subject=Joining LUCK Research Group" class="btn btn-primary" data-i18n="contact.join.btn">Apply Now</a>
+
+                    <div class="social-links">
+                        <h4 data-i18n="contact.social">Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Twitter" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" class="social-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" aria-label="GitHub" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" aria-label="Google Scholar" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3 class="lab-name" data-i18n="lab.name">Research Lab</h3>
-                    <p data-i18n="footer.description">Advancing knowledge through innovative research</p>
+                    <h3 class="footer-title" data-i18n="lab.name">LUCK Research Group</h3>
+                    <p data-i18n="footer.tagline">Advancing knowledge through innovative research</p>
                 </div>
+
                 <div class="footer-links">
-                    <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
-                    <a href="#" data-i18n="footer.accessibility">Accessibility</a>
-                    <a href="#" data-i18n="footer.sitemap">Sitemap</a>
+                    <h4 data-i18n="footer.links">Quick Links</h4>
+                    <ul>
+                        <li><a href="#research" data-i18n="nav.research">Research</a></li>
+                        <li><a href="#team" data-i18n="nav.team">Team</a></li>
+                        <li><a href="#publications" data-i18n="nav.publications">Publications</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
                 </div>
+
                 <div class="footer-social">
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" aria-label="Google Scholar"><i class="fab fa-google"></i></a>
+                    <h4 data-i18n="footer.social">Connect</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" aria-label="GitHub" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" aria-label="Google Scholar" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p data-i18n="footer.copyright">© 2024 Research Lab. All rights reserved.</p>
+                <p data-i18n="footer.copyright">© 2024 LUCK Research Group. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Load scripts in order -->
+    <!-- Scripts -->
     <script src="js/data-loader.js"></script>
     <script src="js/bibtex-parser.js"></script>
     <script src="js/publications-renderer.js"></script>

@@ -160,6 +160,9 @@ class ResearchGroupWebsite {
       // Update lab information
       this.updateLabInformation();
 
+      // Setup team tabs functionality
+      this.setupTeamTabs();
+
     } catch (error) {
       console.error('Error initializing modules:', error);
       throw error;
@@ -198,21 +201,21 @@ class ResearchGroupWebsite {
 
     // Update email
     const emailLink = document.querySelector('a[href^="mailto:"]');
-    if (emailLink) {
+    if (emailLink && contact.email) {
       emailLink.href = `mailto:${contact.email}`;
       emailLink.textContent = contact.email;
     }
 
     // Update phone
     const phoneElement = document.querySelector('[data-i18n="contact.phone.content"]');
-    if (phoneElement) {
+    if (phoneElement && contact.phone) {
       phoneElement.textContent = contact.phone;
     }
 
-    // Update address
-    const addressElement = document.querySelector('[data-i18n="contact.address.content"]');
-    if (addressElement) {
-      addressElement.innerHTML = contact.address[this.currentLang] || contact.address.en;
+    // Update location
+    const locationElement = document.querySelector('[data-i18n="contact.location.content"]');
+    if (locationElement && contact.location) {
+      locationElement.innerHTML = contact.location[this.currentLang] || contact.location.en;
     }
   }
 
@@ -254,13 +257,12 @@ class ResearchGroupWebsite {
     });
 
     // Mobile menu toggle
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileNav = document.querySelector('.mobile-nav');
 
-    if (mobileMenuToggle && navMenu) {
-      mobileMenuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        mobileMenuToggle.classList.toggle('active');
+    if (mobileMenuBtn && mobileNav) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileNav.classList.toggle('active');
       });
     }
 
@@ -275,9 +277,8 @@ class ResearchGroupWebsite {
           this.smoothScrollTo(targetElement);
 
           // Close mobile menu if open
-          if (navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active');
-            mobileMenuToggle.classList.remove('active');
+          if (mobileNav && mobileNav.classList.contains('active')) {
+            mobileNav.classList.remove('active');
           }
         }
       });
@@ -288,6 +289,35 @@ class ResearchGroupWebsite {
 
     // Intersection Observer for animations
     this.setupScrollAnimations();
+  }
+
+  /**
+   * Setup team tabs functionality
+   */
+  setupTeamTabs() {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const teamGrids = {
+      faculty: document.getElementById('facultyTeam'),
+      students: document.getElementById('studentTeam'),
+      alumni: document.getElementById('alumniTeam')
+    };
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const category = e.target.dataset.category;
+
+        // Update active button
+        tabButtons.forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+
+        // Show corresponding grid
+        Object.entries(teamGrids).forEach(([key, grid]) => {
+          if (grid) {
+            grid.style.display = key === category ? 'grid' : 'none';
+          }
+        });
+      });
+    });
   }
 
   /**
@@ -462,7 +492,7 @@ class ResearchRenderer {
   }
 
   async init(researchData) {
-    this.researchAreas = research.researchAreas || [];
+    this.researchAreas = (researchData && researchData.researchAreas) ? researchData.researchAreas : [];
     this.render();
   }
 
@@ -476,21 +506,21 @@ class ResearchRenderer {
 
   renderResearchArea(area) {
     const lang = document.documentElement.lang || 'en';
-    const title = area.title[lang] || area.title.en;
-    const description = area.description[lang] || area.description.en;
+    const title = area.title && area.title[lang] ? area.title[lang] : (area.title && area.title.en ? area.title.en : 'Research Area');
+    const description = area.description && area.description[lang] ? area.description[lang] : (area.description && area.description.en ? area.description.en : '');
     const keywords = area[`keywords_${lang}`] || area.keywords || [];
 
     return `
-      <div class="research-card" data-area="${area.id}">
+      <div class="research-card" data-area="${area.id || 'unknown'}">
         <div class="research-icon">
-          <i class="${area.icon}"></i>
+          <i class="${area.icon || 'fas fa-flask'}"></i>
         </div>
         <h3 class="research-title">${title}</h3>
         <p class="research-description">${description}</p>
         <div class="research-keywords">
           ${keywords.map(keyword => `<span class="keyword-tag">${keyword}</span>`).join('')}
         </div>
-        <a href="#" class="btn btn-outline" onclick="window.app.showResearchDetails('${area.id}')">
+        <a href="#" class="btn btn-outline" onclick="window.app.showResearchDetails('${area.id || 'unknown'}')">
           <span data-i18n="research.learnMore">Learn More</span>
         </a>
       </div>
@@ -508,19 +538,24 @@ class MembersRenderer {
   }
 
   async init(membersData) {
-    this.members = membersData.members || {};
+    this.members = (membersData && membersData.members) ? membersData.members : {};
     this.render();
   }
 
   render() {
-    this.renderMemberSection('faculty', 'facultyMembers');
-    this.renderMemberSection('students', 'studentMembers');
-    this.renderMemberSection('alumni', 'alumniMembers');
+    this.renderMemberSection('faculty', 'facultyTeam');
+    this.renderMemberSection('students', 'studentTeam');
+    this.renderMemberSection('alumni', 'alumniTeam');
   }
 
   renderMemberSection(type, containerId) {
     const container = document.getElementById(containerId);
-    if (!container || !this.members[type]) return;
+    if (!container || !this.members[type]) {
+      if (container) {
+        container.innerHTML = '<p>No members found.</p>';
+      }
+      return;
+    }
 
     const html = this.members[type].map(member => this.renderMember(member, type)).join('');
     container.innerHTML = html;
@@ -528,9 +563,9 @@ class MembersRenderer {
 
   renderMember(member, type) {
     const lang = document.documentElement.lang || 'en';
-    const name = member[`name_${lang}`] || member.name;
-    const position = member.position[lang] || member.position.en;
-    const bio = member.bio ? (member.bio[lang] || member.bio.en) : '';
+    const name = member[`name_${lang}`] || member.name_zh || member.name || 'Unknown';
+    const position = member.position ? (member.position[lang] || member.position.en || member.position) : '';
+    const bio = member.bio ? (member.bio[lang] || member.bio.en || member.bio) : '';
     const researchInterests = member.research_interests || [];
 
     return `
@@ -547,9 +582,10 @@ class MembersRenderer {
         ${bio ? `<p class="member-bio">${bio}</p>` : ''}
         ${researchInterests.length > 0 ? `
           <div class="member-interests">
-            ${researchInterests.map(interest =>
-              `<span class="interest-tag">${interest[lang] || interest.en || interest}</span>`
-            ).join('')}
+            ${researchInterests.map(interest => {
+              const interestText = interest[lang] || interest.en || interest;
+              return `<span class="interest-tag">${interestText}</span>`;
+            }).join('')}
           </div>
         ` : ''}
         <div class="member-links">
@@ -571,6 +607,11 @@ class MembersRenderer {
           ${member.social?.linkedin ? `
             <a href="${member.social.linkedin}" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="LinkedIn">
               <i class="fab fa-linkedin"></i>
+            </a>
+          ` : ''}
+          ${member.social?.twitter ? `
+            <a href="${member.social.twitter}" target="_blank" rel="noopener noreferrer" class="member-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
             </a>
           ` : ''}
         </div>
