@@ -784,6 +784,18 @@ a:hover {
   justify-content: center;
   color: var(--color-text-secondary);
   transition: all var(--transition-fast);
+  text-decoration: none;
+  font-size: 0;
+  line-height: 0;
+}
+
+.member-link i {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.member-link:empty::before {
+  content: '';
 }
 
 .member-link:hover {
