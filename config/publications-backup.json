@@ -1,0 +1,175 @@
+{
+  "publications": [
+    {
+      "id": "pub-2024-001",
+      "type": "journal",
+      "title": {
+        "en": "Advancing Deep Learning Applications in Computer Vision: A Comprehensive Survey",
+        "zh": "推进深度学习在计算机视觉中的应用：全面综述"
+      },
+      "authors": [
+        {"name": "Jane Smith", "is_highlighted": true, "email": "jane.smith@university.edu", "orcid": "0000-0000-0000-0001"},
+        {"name": "Alice Johnson", "email": "alice.johnson@university.edu", "student": true},
+        {"name": "Wei Chen", "is_highlighted": true, "email": "wei.chen@university.edu", "orcid": "0000-0000-0000-0002"},
+        {"name": "Bob Davis", "email": "bob.davis@university.edu", "student": true}
+      ],
+      "journal": {
+        "en": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+        "zh": "IEEE模式分析与机器智能汇刊"
+      },
+      "year": 2024,
+      "volume": "46",
+      "issue": "3",
+      "pages": "567-589",
+      "doi": "10.1109/TPAMI.2024.1234567",
+      "url": "https://doi.org/10.1109/TPAMI.2024.1234567",
+      "issn": "0162-8828",
+      "publisher": "IEEE Computer Society",
+      "abstract": {
+        "en": "This comprehensive survey presents the latest advances in deep learning applications for computer vision tasks...",
+        "zh": "这篇全面综述介绍了深度学习在计算机视觉任务中的最新进展..."
+      },
+      "keywords": ["deep learning", "computer vision", "survey", "neural networks"],
+      "keywords_zh": ["深度学习", "计算机视觉", "综述", "神经网络"],
+      "pdf_url": "assets/papers/2024-smith-deep-vision.pdf",
+      "code_url": "https://github.com/arlab/deep-vision-survey",
+      "data_url": "https://zenodo.org/record/1234567",
+      "slides_url": "assets/slides/2024-smith-vision-slides.pdf",
+      "video_url": "https://youtube.com/watch?v=example",
+      "blog_url": "https://arlab.blog/vision-survey-2024",
+      "highlighted": true,
+      "bibtex": "@article{smith2024advancing,\n  title={Advancing Deep Learning Applications in Computer Vision: A Comprehensive Survey},\n  author={Smith, Jane and Johnson, Alice and Chen, Wei and Davis, Bob},\n  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},\n  volume={46},\n  number={3},\n  pages={567--589},\n  year={2024},\n  publisher={IEEE}\n}",
+      "research_area": "computer_vision",
+      "research_group": "ARL",
+      "funding": ["NSF-CCF-2100012", "Google Research Award"],
+      "citation_count": 45,
+      "altmetric_score": 89,
+      "impact_factor": 24.3,
+      "equal_contribution": ["Alice Johnson", "Bob Davis"],
+      "corresponding_author": "Jane Smith, Wei Chen",
+      "language": "en",
+      "collaborators": ["MIT Computer Vision Lab", "Stanford AI Lab"],
+      "award": {
+        "en": "Best Paper Award",
+        "zh": "最佳论文奖"
+      },
+      "patents": ["US Patent 1234567"],
+      "software": ["DeepVision Toolkit"],
+      "datasets": ["VisionBench Dataset"],
+      "presentations": [
+        {"event": "CVPR 2024", "location": "Seattle, WA", "date": "2024-06-17"},
+        {"event": "ARL Weekly Meeting", "location": "University", "date": "2024-03-15"}
+      ]
+    },
+    {
+      "id": "pub-2024-002",
+      "type": "conference",
+      "title": {
+        "en": "Privacy-Preserving Machine Learning: Novel Approaches for Secure Data Collaboration",
+        "zh": "隐私保护机器学习：安全数据协作的新方法"
+      },
+      "authors": [
+        {"name": "Wei Chen", "is_highlighted": true},
+        {"name": "Jane Smith"},
+        {"name": "Li Wang"}
+      ],
+      "conference": {
+        "en": "Proceedings of the 41st International Conference on Machine Learning (ICML)",
+        "zh": "第41届国际机器学习会议论文集"
+      },
+      "year": 2024,
+      "pages": "1234-1248",
+      "doi": "10.1007/978-3-031-12345-6_78",
+      "abstract": {
+        "en": "We propose novel cryptographic approaches for privacy-preserving machine learning in collaborative settings...",
+        "zh": "我们提出了用于协作环境中隐私保护机器学习的新颖密码学方法..."
+      },
+      "keywords": ["privacy", "machine learning", "cryptography", "federated learning"],
+      "pdf_url": "assets/papers/2024-chen-privacy-ml.pdf",
+      "code_url": "https://github.com/arlab/privacy-ml",
+      "award": {
+        "en": "Best Paper Award",
+        "zh": "最佳论文奖"
+      }
+    },
+    {
+      "id": "pub-2023-001",
+      "type": "journal",
+      "title": {
+        "en": "Human-Centered AI: Designing Ethical and Trustworthy Intelligent Systems",
+        "zh": "以人为本的人工智能：设计道德可信的智能系统"
+      },
+      "authors": [
+        {"name": "Jane Smith", "is_highlighted": true},
+        {"name": "Carlos Martinez"}
+      ],
+      "journal": {
+        "en": "Artificial Intelligence Journal",
+        "zh": "人工智能期刊"
+      },
+      "year": 2023,
+      "volume": "321",
+      "pages": "103-125",
+      "doi": "10.1016/j.artint.2023.103987",
+      "abstract": {
+        "en": "This paper presents a framework for designing human-centered AI systems that prioritize ethical considerations...",
+        "zh": "本文提出了一个设计以人为本的人工智能系统的框架，该框架优先考虑伦理因素..."
+      },
+      "keywords": ["AI ethics", "human-centered design", "trustworthy AI", "responsible AI"],
+      "pdf_url": "assets/papers/2023-smith-human-centered-ai.pdf"
+    },
+    {
+      "id": "pub-2023-002",
+      "type": "conference",
+      "title": {
+        "en": "Efficient Large-Scale Data Processing with Novel Distributed Computing Framework",
+        "zh": "使用新型分布式计算框架进行高效大规模数据处理"
+      },
+      "authors": [
+        {"name": "Bob Davis", "is_highlighted": true},
+        {"name": "Alice Johnson"},
+        {"name": "Priya Kumar"}
+      ],
+      "conference": {
+        "en": "Proceedings of ACM SIGMOD International Conference on Management of Data",
+        "zh": "ACM SIGMOD数据管理国际会议论文集"
+      },
+      "year": 2023,
+      "pages": "1567-1582",
+      "doi": "10.1145/3564706.3567432",
+      "abstract": {
+        "en": "We introduce a novel distributed computing framework for efficient processing of large-scale datasets...",
+        "zh": "我们介绍了一个用于高效处理大规模数据集的新颖分布式计算框架..."
+      },
+      "keywords": ["distributed computing", "big data", "data processing", "scalability"],
+      "pdf_url": "assets/papers/2023-davis-distributed-computing.pdf",
+      "code_url": "https://github.com/arlab/efficient-data-processing"
+    },
+    {
+      "id": "pub-2023-003",
+      "type": "journal",
+      "title": {
+        "en": "Enhancing User Experience through Adaptive Interface Design: A Machine Learning Approach",
+        "zh": "通过自适应界面设计增强用户体验：一种机器学习方法"
+      },
+      "authors": [
+        {"name": "Li Wang", "is_highlighted": true},
+        {"name": "Jane Smith"}
+      ],
+      "journal": {
+        "en": "International Journal of Human-Computer Studies",
+        "zh": "国际人机研究期刊"
+      },
+      "year": 2023,
+      "volume": "175",
+      "pages": "102981",
+      "doi": "10.1016/j.ijhcs.2023.102981",
+      "abstract": {
+        "en": "This study presents a machine learning approach for creating adaptive interfaces that respond to user behavior...",
+        "zh": "本研究提出了一种创建响应用户行为的自适应界面的机器学习方法..."
+      },
+      "keywords": ["human-computer interaction", "adaptive interfaces", "user experience", "machine learning"],
+      "pdf_url": "assets/papers/2023-wang-adaptive-interfaces.pdf"
+    }
+  ]
+}

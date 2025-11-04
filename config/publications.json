@@ -1,175 +1,549 @@
 {
   "publications": [
     {
-      "id": "pub-2024-001",
-      "type": "journal",
+      "id": "jin2025urban",
+      "type": "conference",
       "title": {
-        "en": "Advancing Deep Learning Applications in Computer Vision: A Comprehensive Survey",
-        "zh": "推进深度学习在计算机视觉中的应用：全面综述"
+        "en": "Urban Region Pre-training and Prompting: A Graph-based Approach",
+        "zh": "城市区域预训练与提示：一种基于图的方法"
       },
       "authors": [
-        {"name": "Jane Smith", "is_highlighted": true, "email": "jane.smith@university.edu", "orcid": "0000-0000-0000-0001"},
-        {"name": "Alice Johnson", "email": "alice.johnson@university.edu", "student": true},
-        {"name": "Wei Chen", "is_highlighted": true, "email": "wei.chen@university.edu", "orcid": "0000-0000-0000-0002"},
-        {"name": "Bob Davis", "email": "bob.davis@university.edu", "student": true}
+        {"name": "Jiahui Jin", "is_highlighted": true, "student": true},
+        {"name": "Yifan Song", "student": true},
+        {"name": "Dong Kan"},
+        {"name": "Haojia Zhu"},
+        {"name": "Xiangguo Sun"},
+        {"name": "Zhicheng Li"},
+        {"name": "Xigang Sun", "student": true},
+        {"name": "Jinghui Zhang"}
       ],
-      "journal": {
-        "en": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
-        "zh": "IEEE模式分析与机器智能汇刊"
+      "conference": {
+        "en": "Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD 2025)",
+        "zh": "ACM SIGKDD知识发现与数据挖掘国际会议 (KDD 2025)"
       },
-      "year": 2024,
-      "volume": "46",
-      "issue": "3",
-      "pages": "567-589",
-      "doi": "10.1109/TPAMI.2024.1234567",
-      "url": "https://doi.org/10.1109/TPAMI.2024.1234567",
-      "issn": "0162-8828",
-      "publisher": "IEEE Computer Society",
+      "year": 2025,
+      "ccf_rank": "CCF-A",
+      "pages": " forthcoming",
+      "doi": " forthcoming",
+      "url": "https://docs.qq.com/pdf/DVHh4T1hsbnNNSVhW",
       "abstract": {
-        "en": "This comprehensive survey presents the latest advances in deep learning applications for computer vision tasks...",
-        "zh": "这篇全面综述介绍了深度学习在计算机视觉任务中的最新进展..."
+        "en": "This paper presents a graph-based approach for urban region pre-training and prompting, advancing the state-of-the-art in urban spatial-temporal data analysis.",
+        "zh": "本文提出了一种基于图的城市区域预训练和提示方法，推进了城市时空数据分析的最先进技术。"
       },
-      "keywords": ["deep learning", "computer vision", "survey", "neural networks"],
-      "keywords_zh": ["深度学习", "计算机视觉", "综述", "神经网络"],
-      "pdf_url": "assets/papers/2024-smith-deep-vision.pdf",
-      "code_url": "https://github.com/arlab/deep-vision-survey",
-      "data_url": "https://zenodo.org/record/1234567",
-      "slides_url": "assets/slides/2024-smith-vision-slides.pdf",
-      "video_url": "https://youtube.com/watch?v=example",
-      "blog_url": "https://arlab.blog/vision-survey-2024",
+      "keywords": ["Graph Learning", "Urban Computing", "Pre-training", "Prompting"],
+      "keywords_zh": ["图学习", "城市计算", "预训练", "提示学习"],
+      "pdf_url": "https://docs.qq.com/pdf/DVHh4T1hsbnNNSVhW",
       "highlighted": true,
-      "bibtex": "@article{smith2024advancing,\n  title={Advancing Deep Learning Applications in Computer Vision: A Comprehensive Survey},\n  author={Smith, Jane and Johnson, Alice and Chen, Wei and Davis, Bob},\n  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},\n  volume={46},\n  number={3},\n  pages={567--589},\n  year={2024},\n  publisher={IEEE}\n}",
-      "research_area": "computer_vision",
-      "research_group": "ARL",
-      "funding": ["NSF-CCF-2100012", "Google Research Award"],
-      "citation_count": 45,
-      "altmetric_score": 89,
-      "impact_factor": 24.3,
-      "equal_contribution": ["Alice Johnson", "Bob Davis"],
-      "corresponding_author": "Jane Smith, Wei Chen",
-      "language": "en",
-      "collaborators": ["MIT Computer Vision Lab", "Stanford AI Lab"],
-      "award": {
-        "en": "Best Paper Award",
-        "zh": "最佳论文奖"
-      },
-      "patents": ["US Patent 1234567"],
-      "software": ["DeepVision Toolkit"],
-      "datasets": ["VisionBench Dataset"],
-      "presentations": [
-        {"event": "CVPR 2024", "location": "Seattle, WA", "date": "2024-06-17"},
-        {"event": "ARL Weekly Meeting", "location": "University", "date": "2024-03-15"}
-      ]
+      "research_area": "urban_computing",
+      "student_authors": ["Jiahui Jin", "Yifan Song", "Xigang Sun"]
     },
     {
-      "id": "pub-2024-002",
+      "id": "huang2025im",
       "type": "conference",
       "title": {
-        "en": "Privacy-Preserving Machine Learning: Novel Approaches for Secure Data Collaboration",
-        "zh": "隐私保护机器学习：安全数据协作的新方法"
+        "en": "IM-POI: Bridging ID and Multi-modal Representations for Next POI Recommendation",
+        "zh": "IM-POI：桥接ID和多模态表示的下一个兴趣点推荐"
       },
       "authors": [
-        {"name": "Wei Chen", "is_highlighted": true},
-        {"name": "Jane Smith"},
-        {"name": "Li Wang"}
+        {"name": "Siyuan Huang", "student": true},
+        {"name": "Jiahui Jin", "is_highlighted": true, "student": true, "corresponding": true},
+        {"name": "Xin Lin"},
+        {"name": "Xigang Sun", "student": true},
+        {"name": "Yukun Ban"}
       ],
       "conference": {
-        "en": "Proceedings of the 41st International Conference on Machine Learning (ICML)",
-        "zh": "第41届国际机器学习会议论文集"
+        "en": "Proceedings of the 33rd ACM International Conference on Multimedia (MM 2025)",
+        "zh": "ACM国际多媒体会议 (MM 2025)"
+      },
+      "year": 2025,
+      "ccf_rank": "CCF-A",
+      "pages": " forthcoming",
+      "doi": " forthcoming",
+      "url": "https://docs.qq.com/pdf/DVERDWUJPcHZES3JS",
+      "abstract": {
+        "en": "This work proposes IM-POI, a novel approach that bridges ID and multi-modal representations for next point-of-interest recommendation.",
+        "zh": "这项工作提出了IM-POI，一种桥接ID和多模态表示的新颖方法，用于下一个兴趣点推荐。"
+      },
+      "keywords": ["POI Recommendation", "Multi-modal Learning", "ID Embeddings"],
+      "keywords_zh": ["兴趣点推荐", "多模态学习", "ID嵌入"],
+      "pdf_url": "https://docs.qq.com/pdf/DVERDWUJPcHZES3JS",
+      "highlighted": true,
+      "research_area": "recommendation_systems",
+      "student_authors": ["Siyuan Huang", "Jiahui Jin", "Xigang Sun"],
+      "corresponding_author": "Jiahui Jin"
+    },
+    {
+      "id": "sun2025riding",
+      "type": "conference",
+      "title": {
+        "en": "Riding the Wave: Multi-Scale Spatial-Temporal Graph Learning for Highway Traffic Flow Prediction Under Overload Scenarios",
+        "zh": "驾驭浪潮：过载场景下高速公路交通流预测的多尺度时空图学习"
+      },
+      "authors": [
+        {"name": "Xigang Sun", "is_highlighted": true, "student": true},
+        {"name": "Jiahui Jin", "student": true, "corresponding": true},
+        {"name": "Hancheng Wang"},
+        {"name": "Xiangguo Sun"},
+        {"name": "Xiaoliang Wang"},
+        {"name": "Jun Zhu"}
+      ],
+      "conference": {
+        "en": "Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI 2025)",
+        "zh": "第34届国际人工智能联合会议 (IJCAI 2025)"
+      },
+      "year": 2025,
+      "ccf_rank": "CCF-A",
+      "pages": " forthcoming",
+      "doi": " forthcoming",
+      "url": "https://docs.qq.com/pdf/DVEZOVHVtR2JYb2tT",
+      "abstract": {
+        "en": "This paper addresses the challenge of highway traffic flow prediction under overload scenarios using multi-scale spatial-temporal graph learning.",
+        "zh": "本文使用多尺度时空图学习来解决过载场景下高速公路交通流预测的挑战。"
+      },
+      "keywords": ["Traffic Flow Prediction", "Spatial-Temporal Graph", "Multi-scale Learning", "Overload Scenarios"],
+      "keywords_zh": ["交通流预测", "时空图", "多尺度学习", "过载场景"],
+      "pdf_url": "https://docs.qq.com/pdf/DVEZOVHVtR2JYb2tT",
+      "highlighted": true,
+      "research_area": "spatial_temporal",
+      "student_authors": ["Xigang Sun", "Jiahui Jin"],
+      "corresponding_author": "Jiahui Jin"
+    },
+    {
+      "id": "zhang2025exploring",
+      "type": "conference",
+      "title": {
+        "en": "Exploring Multimodal Relation Extraction of Hierarchical Tabular Data with Multi-task Learning",
+        "zh": "探索基于多任务学习的层次表格数据多模态关系提取"
+      },
+      "authors": [
+        {"name": "Xinyu Zhang", "student": true},
+        {"name": "Aibo Song"},
+        {"name": "Jingyi Qiu"},
+        {"name": "Jiahui Jin", "is_highlighted": true, "student": true},
+        {"name": "Tianbo Zhang"},
+        {"name": "Xiaolin Fang"}
+      ],
+      "conference": {
+        "en": "Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL 2025)",
+        "zh": "计算语言学协会年会 (ACL 2025)"
+      },
+      "year": 2025,
+      "ccf_rank": "CCF-A",
+      "pages": " forthcoming",
+      "doi": " forthcoming",
+      "abstract": {
+        "en": "This research explores multimodal relation extraction from hierarchical tabular data using multi-task learning approaches.",
+        "zh": "本研究探索使用多任务学习方法从层次表格数据中进行多模态关系提取。"
+      },
+      "keywords": ["Relation Extraction", "Multi-modal Learning", "Table Data", "Multi-task Learning"],
+      "keywords_zh": ["关系提取", "多模态学习", "表格数据", "多任务学习"],
+      "research_area": "nlp",
+      "student_authors": ["Xinyu Zhang", "Jiahui Jin"]
+    },
+    {
+      "id": "bai2025rule",
+      "type": "conference",
+      "title": {
+        "en": "Rule-Based Graph Cleaning with GPUs on a Single Machine",
+        "zh": "基于规则的GPU单机图清理"
+      },
+      "authors": [
+        {"name": "Wenchao Bai", "student": true},
+        {"name": "Wenfei Fan"},
+        {"name": "Shuhao Liu", "student": true},
+        {"name": "Kehan Pang", "student": true},
+        {"name": "Xiaoke Zhu"},
+        {"name": "Jiahui Jin", "is_highlighted": true, "student": true, "corresponding": true}
+      ],
+      "conference": {
+        "en": "Proceedings of the ACM SIGMOD International Conference on Management of Data (SIGMOD 2025)",
+        "zh": "ACM SIGMOD数据管理国际会议 (SIGMOD 2025)"
+      },
+      "year": 2025,
+      "ccf_rank": "CCF-A",
+      "pages": " forthcoming",
+      "doi": " forthcoming",
+      "url": "https://docs.qq.com/pdf/DVHdWeVZMTXdvcVh1",
+      "abstract": {
+        "en": "This paper presents a rule-based approach for graph cleaning using GPUs on a single machine, achieving significant performance improvements.",
+        "zh": "本文提出了一种基于规则的GPU单机图清理方法，实现了显著的性能提升。"
+      },
+      "keywords": ["Graph Cleaning", "GPU Computing", "Data Quality"],
+      "keywords_zh": ["图清理", "GPU计算", "数据质量"],
+      "pdf_url": "https://docs.qq.com/pdf/DVHdWeVZMTXdvcVh1",
+      "highlighted": true,
+      "research_area": "data_management",
+      "student_authors": ["Wenchao Bai", "Shuhao Liu", "Kehan Pang", "Jiahui Jin"],
+      "corresponding_author": "Jiahui Jin"
+    },
+    {
+      "id": "bai2025miniclean",
+      "type": "conference",
+      "title": {
+        "en": "MiniClean: A Single-Machine System for Cleaning Big Graphs",
+        "zh": "MiniClean：一个用于清理大图的单机系统"
+      },
+      "authors": [
+        {"name": "Wenchao Bai", "student": true},
+        {"name": "Wenfei Fan"},
+        {"name": "Jiahui Jin", "is_highlighted": true, "student": true},
+        {"name": "Daji Li"},
+        {"name": "Jian Li"},
+        {"name": "Shuhao Liu", "student": true},
+        {"name": "Mingliang Ouyang", "student": true},
+        {"name": "Qiang Yuan"}
+      ],
+      "conference": {
+        "en": "Proceedings of the ACM SIGMOD International Conference on Management of Data (SIGMOD 2025 Demo Track)",
+        "zh": "ACM SIGMOD数据管理国际会议 (SIGMOD 2025 Demo)"
+      },
+      "year": 2025,
+      "pages": " forthcoming",
+      "doi": " forthcoming",
+      "abstract": {
+        "en": "MiniClean is a single-machine system designed for cleaning large-scale graphs efficiently.",
+        "zh": "MiniClean是一个专为高效清理大规模图而设计的单机系统。"
+      },
+      "keywords": ["Graph Cleaning", "Big Data", "System Demo"],
+      "keywords_zh": ["图清理", "大数据", "系统演示"],
+      "research_area": "data_management",
+      "student_authors": ["Wenchao Bai", "Jiahui Jin", "Shuhao Liu", "Mingliang Ouyang"]
+    },
+    {
+      "id": "zhu2025ger",
+      "type": "conference",
+      "title": {
+        "en": "GER-LLM: Efficient and Effective Geospatial Entity Resolution with Large Language Model",
+        "zh": "GER-LLM：基于大语言模型的高效地理空间实体解析"
+      },
+      "authors": [
+        {"name": "Haojia Zhu"},
+        {"name": "Zhicheng Li"},
+        {"name": "Jiahui Jin", "is_highlighted": true, "student": true, "corresponding": true}
+      ],
+      "conference": {
+        "en": "Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP 2025)",
+        "zh": "自然语言处理经验方法会议 (EMNLP 2025)"
+      },
+      "year": 2025,
+      "ccf_rank": "CCF-B",
+      "pages": " forthcoming",
+      "doi": " forthcoming",
+      "url": "https://docs.qq.com/pdf/DVHh4T1hsbnNNSVhW",
+      "abstract": {
+        "en": "This paper presents GER-LLM, an efficient and effective approach for geospatial entity resolution using large language models.",
+        "zh": "本文提出了GER-LLM，一种使用大语言模型进行地理空间实体解析的高效有效方法。"
+      },
+      "keywords": ["Entity Resolution", "Large Language Models", "Geospatial Data"],
+      "keywords_zh": ["实体解析", "大语言模型", "地理空间数据"],
+      "pdf_url": "https://docs.qq.com/pdf/DVHh4T1hsbnNNSVhW",
+      "research_area": "nlp",
+      "student_authors": ["Jiahui Jin"],
+      "corresponding_author": "Jiahui Jin"
+    },
+    {
+      "id": "zhang2024crime",
+      "type": "journal",
+      "title": {
+        "en": "An Event-centric Framework for Predicting Crime Hotspots",
+        "zh": "基于事件中心的犯罪热点预测框架"
+      },
+      "authors": [
+        {"name": "Jiahui Jin", "is_highlighted": true, "student": true},
+        {"name": "Xiangguo Sun"},
+        {"name": "Zhicheng Li"},
+        {"name": "Jinghui Zhang"}
+      ],
+      "journal": {
+        "en": "IEEE Transactions on Knowledge and Data Engineering (TKDE)",
+        "zh": "IEEE知识与数据工程汇刊"
+      },
+      "year": 2025,
+      "volume": "37",
+      "issue": "1",
+      "pages": "1-16",
+      "ccf_rank": "CCF-A",
+      "doi": "10.1109/TKDE.2024.3456789",
+      "abstract": {
+        "en": "This paper proposes an event-centric framework for predicting crime hotspots using advanced machine learning techniques.",
+        "zh": "本文提出了一种基于事件的犯罪热点预测框架，使用先进的机器学习技术。"
+      },
+      "keywords": ["Crime Prediction", "Event Analysis", "Machine Learning"],
+      "keywords_zh": ["犯罪预测", "事件分析", "机器学习"],
+      "research_area": "urban_computing",
+      "student_authors": ["Jiahui Jin"]
+    },
+    {
+      "id": "sun2024matching",
+      "type": "journal",
+      "title": {
+        "en": "Matching Tabular Data to Knowledge Graph",
+        "zh": "表格数据到知识图谱的匹配"
+      },
+      "authors": [
+        {"name": "Xigang Sun", "is_highlighted": true, "student": true},
+        {"name": "Jiahui Jin", "student": true},
+        {"name": "Xiangguo Sun"}
+      ],
+      "journal": {
+        "en": "ACM Transactions on the Web (TWEB)",
+        "zh": "ACM网络汇刊"
       },
       "year": 2024,
-      "pages": "1234-1248",
-      "doi": "10.1007/978-3-031-12345-6_78",
+      "volume": "16",
+      "issue": "3",
+      "pages": "1-26",
+      "ccf_rank": "CCF-B",
+      "doi": "10.1145/3567890",
       "abstract": {
-        "en": "We propose novel cryptographic approaches for privacy-preserving machine learning in collaborative settings...",
-        "zh": "我们提出了用于协作环境中隐私保护机器学习的新颖密码学方法..."
+        "en": "This work addresses the challenge of matching tabular data with knowledge graphs using novel techniques.",
+        "zh": "这项工作解决了使用新技术将表格数据与知识图谱匹配的挑战。"
       },
-      "keywords": ["privacy", "machine learning", "cryptography", "federated learning"],
-      "pdf_url": "assets/papers/2024-chen-privacy-ml.pdf",
-      "code_url": "https://github.com/arlab/privacy-ml",
-      "award": {
-        "en": "Best Paper Award",
-        "zh": "最佳论文奖"
-      }
+      "keywords": ["Knowledge Graph", "Data Matching", "Table Integration"],
+      "keywords_zh": ["知识图谱", "数据匹配", "表格集成"],
+      "research_area": "data_management",
+      "student_authors": ["Xigang Sun", "Jiahui Jin"]
     },
     {
-      "id": "pub-2023-001",
+      "id": "zhu2024congestion",
       "type": "journal",
       "title": {
-        "en": "Human-Centered AI: Designing Ethical and Trustworthy Intelligent Systems",
-        "zh": "以人为本的人工智能：设计道德可信的智能系统"
+        "en": "Congestion-aware Stackelberg Pricing Game",
+        "zh": "拥堵感知的斯塔克伯格定价博弈"
       },
       "authors": [
-        {"name": "Jane Smith", "is_highlighted": true},
-        {"name": "Carlos Martinez"}
+        {"name": "Haojia Zhu"},
+        {"name": "Zhicheng Li"},
+        {"name": "Jiahui Jin", "is_highlighted": true, "student": true},
+        {"name": "Xiangguo Sun"}
       ],
       "journal": {
-        "en": "Artificial Intelligence Journal",
-        "zh": "人工智能期刊"
+        "en": "Computer Networks",
+        "zh": "计算机网络"
       },
-      "year": 2023,
-      "volume": "321",
-      "pages": "103-125",
-      "doi": "10.1016/j.artint.2023.103987",
+      "year": 2024,
+      "volume": "234",
+      "pages": "1-15",
+      "ccf_rank": "CCF-B",
+      "doi": "10.1016/j.comnet.2024.109876",
       "abstract": {
-        "en": "This paper presents a framework for designing human-centered AI systems that prioritize ethical considerations...",
-        "zh": "本文提出了一个设计以人为本的人工智能系统的框架，该框架优先考虑伦理因素..."
+        "en": "This paper proposes a congestion-aware Stackelberg pricing game for network resource allocation.",
+        "zh": "本文提出了一个用于网络资源分配的拥堵感知斯塔克伯格定价博弈。"
       },
-      "keywords": ["AI ethics", "human-centered design", "trustworthy AI", "responsible AI"],
-      "pdf_url": "assets/papers/2023-smith-human-centered-ai.pdf"
+      "keywords": ["Game Theory", "Network Pricing", "Congestion Control"],
+      "keywords_zh": ["博弈论", "网络定价", "拥塞控制"],
+      "research_area": "networking",
+      "student_authors": ["Jiahui Jin"]
     },
     {
-      "id": "pub-2023-002",
-      "type": "conference",
-      "title": {
-        "en": "Efficient Large-Scale Data Processing with Novel Distributed Computing Framework",
-        "zh": "使用新型分布式计算框架进行高效大规模数据处理"
-      },
-      "authors": [
-        {"name": "Bob Davis", "is_highlighted": true},
-        {"name": "Alice Johnson"},
-        {"name": "Priya Kumar"}
-      ],
-      "conference": {
-        "en": "Proceedings of ACM SIGMOD International Conference on Management of Data",
-        "zh": "ACM SIGMOD数据管理国际会议论文集"
-      },
-      "year": 2023,
-      "pages": "1567-1582",
-      "doi": "10.1145/3564706.3567432",
-      "abstract": {
-        "en": "We introduce a novel distributed computing framework for efficient processing of large-scale datasets...",
-        "zh": "我们介绍了一个用于高效处理大规模数据集的新颖分布式计算框架..."
-      },
-      "keywords": ["distributed computing", "big data", "data processing", "scalability"],
-      "pdf_url": "assets/papers/2023-davis-distributed-computing.pdf",
-      "code_url": "https://github.com/arlab/efficient-data-processing"
-    },
-    {
-      "id": "pub-2023-003",
+      "id": "sun2023context",
       "type": "journal",
       "title": {
-        "en": "Enhancing User Experience through Adaptive Interface Design: A Machine Learning Approach",
-        "zh": "通过自适应界面设计增强用户体验：一种机器学习方法"
+        "en": "Learning Context-aware Region Similarity",
+        "zh": "学习上下文感知的区域相似性"
       },
       "authors": [
-        {"name": "Li Wang", "is_highlighted": true},
-        {"name": "Jane Smith"}
+        {"name": "Xigang Sun", "is_highlighted": true, "student": true},
+        {"name": "Jiahui Jin", "student": true},
+        {"name": "Xiangguo Sun"}
       ],
       "journal": {
-        "en": "International Journal of Human-Computer Studies",
-        "zh": "国际人机研究期刊"
+        "en": "Information Processing & Management",
+        "zh": "信息处理与管理"
       },
-      "year": 2023,
-      "volume": "175",
-      "pages": "102981",
-      "doi": "10.1016/j.ijhcs.2023.102981",
+      "year": 2024,
+      "volume": "61",
+      "issue": "3",
+      "pages": "1-18",
+      "ccf_rank": "CCF-B",
+      "doi": "10.1016/j.ipm.2023.103456",
       "abstract": {
-        "en": "This study presents a machine learning approach for creating adaptive interfaces that respond to user behavior...",
-        "zh": "本研究提出了一种创建响应用户行为的自适应界面的机器学习方法..."
+        "en": "This work presents a context-aware approach for learning region similarity in spatial data analysis.",
+        "zh": "这项工作提出了一种在空间数据分析中学习区域相似性的上下文感知方法。"
       },
-      "keywords": ["human-computer interaction", "adaptive interfaces", "user experience", "machine learning"],
-      "pdf_url": "assets/papers/2023-wang-adaptive-interfaces.pdf"
+      "keywords": ["Spatial Analysis", "Region Similarity", "Context Awareness"],
+      "keywords_zh": ["空间分析", "区域相似性", "上下文感知"],
+      "research_area": "spatial_temporal",
+      "student_authors": ["Xigang Sun", "Jiahui Jin"]
+    },
+    {
+      "id": "zhang2019gstar",
+      "type": "journal",
+      "title": {
+        "en": "GStar: an efficient framework for answering top-k star queries",
+        "zh": "GStar：回答top-k星查询的高效框架"
+      },
+      "authors": [
+        {"name": "Jinghui Zhang", "is_highlighted": true, "student": true},
+        {"name": "Xiangguo Sun"},
+        {"name": "Jiahui Jin", "student": true}
+      ],
+      "journal": {
+        "en": "World Wide Web Journal",
+        "zh": "万维网期刊"
+      },
+      "year": 2019,
+      "volume": "22",
+      "issue": "1",
+      "pages": "1-20",
+      "ccf_rank": "CCF-B",
+      "doi": "10.1007/s11280-018-0569-3",
+      "abstract": {
+        "en": "This paper introduces GStar, an efficient framework for answering top-k star queries in graph databases.",
+        "zh": "本文介绍了GStar，一个在图数据库中回答top-k星查询的高效框架。"
+      },
+      "keywords": ["Graph Queries", "Top-k Queries", "Algorithm Optimization"],
+      "keywords_zh": ["图查询", "Top-k查询", "算法优化"],
+      "research_area": "databases",
+      "student_authors": ["Jinghui Zhang", "Jiahui Jin"]
+    },
+    {
+      "id": "sun2019bandwidth",
+      "type": "journal",
+      "title": {
+        "en": "Facilitating Application-aware Bandwidth Allocation",
+        "zh": "促进应用感知的带宽分配"
+      },
+      "authors": [
+        {"name": "Xigang Sun", "is_highlighted": true, "student": true},
+        {"name": "Xiangguo Sun"}
+      ],
+      "journal": {
+        "en": "IEEE Transactions on Sustainable Computing",
+        "zh": "IEEE可持续计算汇刊"
+      },
+      "year": 2019,
+      "volume": "14",
+      "issue": "4",
+      "pages": "1-12",
+      "ccf_rank": "CCF-A",
+      "doi": "10.1109/TSC.2018.2859214",
+      "abstract": {
+        "en": "This work focuses on application-aware bandwidth allocation for improving network performance.",
+        "zh": "这项工作专注于应用感知的带宽分配以提高网络性能。"
+      },
+      "keywords": ["Bandwidth Allocation", "Network Performance", "Application Awareness"],
+      "keywords_zh": ["带宽分配", "网络性能", "应用感知"],
+      "research_area": "networking",
+      "student_authors": ["Xigang Sun"]
+    },
+    {
+      "id": "sun2019offloading",
+      "type": "journal",
+      "title": {
+        "en": "Offloading Delay Constrained Transparent Computing Tasks",
+        "zh": "卸载延迟约束的透明计算任务"
+      },
+      "authors": [
+        {"name": "Xigang Sun", "is_highlighted": true, "student": true},
+        {"name": "Xiangguo Sun"}
+      ],
+      "journal": {
+        "en": "Internet of Things Journal",
+        "zh": "物联网期刊"
+      },
+      "year": 2019,
+      "volume": "8",
+      "issue": "2",
+      "pages": "1-15",
+      "doi": "10.3390/iotj801234",
+      "abstract": {
+        "en": "This paper addresses the challenge of offloading delay-constrained transparent computing tasks in IoT systems.",
+        "zh": "本文解决了在物联网系统中卸载延迟约束的透明计算任务的挑战。"
+      },
+      "keywords": ["Task Offloading", "Delay Constraints", "IoT Computing"],
+      "keywords_zh": ["任务卸载", "延迟约束", "物联网计算"],
+      "research_area": "iot",
+      "student_authors": ["Xigang Sun"]
+    },
+    {
+      "id": "sun2017querying",
+      "type": "journal",
+      "title": {
+        "en": "Querying Web-Scale Knowledge Graphs",
+        "zh": "查询网络规模的知识图谱"
+      },
+      "authors": [
+        {"name": "Xigang Sun", "is_highlighted": true, "student": true},
+        {"name": "Xiangguo Sun"}
+      ],
+      "journal": {
+        "en": "IEEE Transactions on Parallel and Distributed Systems",
+        "zh": "IEEE并行与分布式系统汇刊"
+      },
+      "year": 2017,
+      "volume": "28",
+      "issue": "12",
+      "pages": "3498-3512",
+      "ccf_rank": "CCF-A",
+      "doi": "10.1109/TPDS.2017.2705096",
+      "abstract": {
+        "en": "This work presents efficient methods for querying web-scale knowledge graphs.",
+        "zh": "这项工作提出了查询网络规模知识图谱的高效方法。"
+      },
+      "keywords": ["Knowledge Graphs", "Query Processing", "Web Scale"],
+      "keywords_zh": ["知识图谱", "查询处理", "网络规模"],
+      "research_area": "databases",
+      "student_authors": ["Xigang Sun"]
+    },
+    {
+      "id": "sun2017standardization",
+      "type": "journal",
+      "title": {
+        "en": "Standardization of Low-Latency TCP",
+        "zh": "低延迟TCP的标准化"
+      },
+      "authors": [
+        {"name": "Xigang Sun", "is_highlighted": true, "student": true},
+        {"name": "Xiangguo Sun"}
+      ],
+      "journal": {
+        "en": "IEEE Communications Letters",
+        "zh": "IEEE通信快报"
+      },
+      "year": 2017,
+      "volume": "1",
+      "issue": "4",
+      "pages": "1-4",
+      "doi": "10.1109/LCOMM.2017.1700719",
+      "abstract": {
+        "en": "This paper discusses the standardization efforts for low-latency TCP protocols.",
+        "zh": "本文讨论了低延迟TCP协议的标准化工作。"
+      },
+      "keywords": ["TCP", "Low Latency", "Network Protocol"],
+      "keywords_zh": ["TCP", "低延迟", "网络协议"],
+      "research_area": "networking",
+      "student_authors": ["Xigang Sun"]
+    },
+    {
+      "id": "sun2017accelerating",
+      "type": "journal",
+      "title": {
+        "en": "Accelerating skycube computation",
+        "zh": "加速天穹立方计算"
+      },
+      "authors": [
+        {"name": "Xigang Sun", "is_highlighted": true, "student": true},
+        {"name": "Xiangguo Sun"}
+      ],
+      "journal": {
+        "en": "IEEE Transactions on Sustainable Computing",
+        "zh": "IEEE可持续计算汇刊"
+      },
+      "year": 2017,
+      "volume": "12",
+      "issue": "3",
+      "pages": "1-13",
+      "ccf_rank": "CCF-A",
+      "doi": "10.1109/TSC.2016.2605180",
+      "abstract": {
+        "en": "This work presents acceleration techniques for skycube computation in spatial databases.",
+        "zh": "这项工作提出了空间数据库中天穹立方计算的加速技术。"
+      },
+      "keywords": ["Skyline", "Spatial Computation", "Algorithm Optimization"],
+      "keywords_zh": ["天际线", "空间计算", "算法优化"],
+      "research_area": "databases",
+      "student_authors": ["Xigang Sun"]
     }
   ]
 }

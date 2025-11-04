@@ -149,12 +149,14 @@ class ResearchGroupWebsite {
       this.modules.researchRenderer = new ResearchRenderer();
       this.modules.membersRenderer = new MembersRenderer();
       this.modules.publicationsRenderer = window.publicationsRenderer; // Already initialized
+      this.modules.activitiesRenderer = window.activitiesRenderer; // Already initialized
 
       // Initialize all renderers
       await Promise.all([
         this.modules.researchRenderer.init(this.config.research),
         this.modules.membersRenderer.init(this.config.members),
-        this.modules.publicationsRenderer.init()
+        this.modules.publicationsRenderer.init(),
+        this.modules.activitiesRenderer.init()
       ]);
 
       // Update lab information
@@ -391,6 +393,10 @@ class ResearchGroupWebsite {
       this.modules.publicationsRenderer.processPublications();
       this.modules.publicationsRenderer.renderPublications();
     }
+
+    if (this.modules.activitiesRenderer) {
+      this.modules.activitiesRenderer.renderActivities();
+    }
   }
 
   /**
@@ -446,7 +452,7 @@ class ResearchGroupWebsite {
     }, observerOptions);
 
     // Observe elements for animation
-    document.querySelectorAll('.research-card, .member-card, .publication-item').forEach(el => {
+    document.querySelectorAll('.research-card, .member-card, .publication-item, .activity-card').forEach(el => {
       observer.observe(el);
     });
   }

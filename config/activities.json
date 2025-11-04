@@ -1,0 +1,70 @@
+[
+  {
+    "id": "activity-001",
+    "title": "秋季团建 - 登山活动",
+    "title_en": "Autumn Team Building - Mountain Hiking",
+    "date": "2024-10-15",
+    "category": "team-building",
+    "location": "西山国家森林公园",
+    "location_en": "Xishan National Forest Park",
+    "description": "课题组全体成员前往西山国家森林公园进行秋季登山团建活动，增进团队凝聚力。",
+    "description_en": "The whole research group went to Xishan National Forest Park for autumn mountain hiking team building activity to enhance team cohesion.",
+    "images": [
+      "images/activities/2024-autumn-hiking-1.jpg",
+      "images/activities/2024-autumn-hiking-2.jpg"
+    ],
+    "participants": ["全体课题组成员"],
+    "participants_en": ["All research group members"]
+  },
+  {
+    "id": "activity-002",
+    "title": "新年聚餐",
+    "title_en": "New Year Dinner",
+    "date": "2024-01-20",
+    "category": "celebration",
+    "location": "学校餐厅",
+    "location_en": "University Restaurant",
+    "description": "课题组新年聚餐活动，庆祝过去一年的成就，展望新一年的目标。",
+    "description_en": "Research group New Year dinner to celebrate achievements of the past year and look forward to the new year's goals.",
+    "images": [
+      "images/activities/2024-new-year-dinner-1.jpg",
+      "images/activities/2024-new-year-dinner-2.jpg"
+    ],
+    "participants": ["全体课题组成员"],
+    "participants_en": ["All research group members"]
+  },
+  {
+    "id": "activity-003",
+    "title": "学术研讨会",
+    "title_en": "Academic Workshop",
+    "date": "2024-03-10",
+    "category": "academic",
+    "location": "会议室A101",
+    "location_en": "Meeting Room A101",
+    "description": "课题组内部学术研讨会，各位成员分享最新的研究进展和成果。",
+    "description_en": "Internal academic workshop where group members shared their latest research progress and achievements.",
+    "images": [
+      "images/activities/2024-academic-workshop-1.jpg"
+    ],
+    "participants": ["全体研究生", "指导教师"],
+    "participants_en": ["All graduate students", "Supervisors"]
+  },
+  {
+    "id": "activity-004",
+    "title": "春游踏青",
+    "title_en": "Spring Outing",
+    "date": "2024-04-05",
+    "category": "team-building",
+    "location": "颐和园",
+    "location_en": "Summer Palace",
+    "description": "春暖花开时节，课题组组织颐和园春游踏青活动。",
+    "description_en": "Spring outing at the Summer Palace during the beautiful spring season.",
+    "images": [
+      "images/activities/2024-spring-outing-1.jpg",
+      "images/activities/2024-spring-outing-2.jpg",
+      "images/activities/2024-spring-outing-3.jpg"
+    ],
+    "participants": ["全体课题组成员"],
+    "participants_en": ["All research group members"]
+  }
+]
