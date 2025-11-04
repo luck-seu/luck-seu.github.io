@@ -19,6 +19,7 @@
                 <a href="#research" class="nav-link" data-i18n="nav.research">Research</a>
                 <a href="#members" class="nav-link" data-i18n="nav.members">Members</a>
                 <a href="#publications" class="nav-link" data-i18n="nav.publications">Publications</a>
+                <a href="#activities" class="nav-link" data-i18n="nav.activities">Activities</a>
                 <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
                 <div class="language-switch">
                     <button class="lang-btn active" data-lang="en">EN</button>
@@ -160,6 +161,25 @@
             </div>
         </section>
 
+        <!-- Activities Section -->
+        <section id="activities" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="activities.title">Group Activities</h2>
+                <div class="activities-filter">
+                    <button class="filter-btn active" data-filter="all" data-i18n="activities.filter.all">All</button>
+                    <button class="filter-btn" data-filter="team-building" data-i18n="activities.filter.teamBuilding">Team Building</button>
+                    <button class="filter-btn" data-filter="academic" data-i18n="activities.filter.academic">Academic</button>
+                    <button class="filter-btn" data-filter="celebration" data-i18n="activities.filter.celebration">Celebration</button>
+                </div>
+                <div class="activities-grid" id="activitiesList">
+                    <!-- Activities will be populated from data.js -->
+                </div>
+                <div class="activities-more">
+                    <a href="#" class="btn btn-outline" data-i18n="activities.viewAll">View All Activities</a>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="container">
@@ -227,6 +247,7 @@
     <script src="js/data-loader.js"></script>
     <script src="js/bibtex-parser.js"></script>
     <script src="js/publications-renderer.js"></script>
+    <script src="js/activities-renderer.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
       "research": "Research",
       "members": "Members",
       "publications": "Publications",
+      "activities": "Activities",
       "contact": "Contact"
     },
     "hero": {
@@ -70,6 +71,17 @@
       "year": "Year",
       "award": "Award"
     },
+    "activities": {
+      "title": "Group Activities",
+      "filter": {
+        "all": "All",
+        "teamBuilding": "Team Building",
+        "academic": "Academic",
+        "celebration": "Celebration"
+      },
+      "viewAll": "View All Activities",
+      "noActivities": "No activities found."
+    },
     "contact": {
       "title": "Contact Us",
       "address": {
@@ -112,6 +124,7 @@
       "research": "研究方向",
       "members": "团队成员",
       "publications": "学术成果",
+      "activities": "课题组活动",
       "contact": "联系我们"
     },
     "hero": {
@@ -176,6 +189,17 @@
       "authors": "作者",
       "year": "年份",
       "award": "获奖"
+    },
+    "activities": {
+      "title": "课题组活动",
+      "filter": {
+        "all": "全部",
+        "teamBuilding": "团建活动",
+        "academic": "学术活动",
+        "celebration": "庆祝活动"
+      },
+      "viewAll": "查看所有活动",
+      "noActivities": "暂无活动。"
     },
     "contact": {
       "title": "联系我们",

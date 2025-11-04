@@ -60,6 +60,10 @@ class DataLoader {
     return this.loadJSON('config/i18n.json');
   }
 
+  async loadActivities() {
+    return this.loadJSON('config/activities.json');
+  }
+
   clearCache() {
     this.cache.clear();
   }
