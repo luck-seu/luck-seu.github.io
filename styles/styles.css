@@ -370,9 +370,24 @@ a:hover {
 .hero-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-4xl);
+  gap: 4rem;
   align-items: center;
   min-height: 600px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .hero-content {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-content {
+    padding: 0 2.5rem;
+  }
 }
 
 .hero-text {
