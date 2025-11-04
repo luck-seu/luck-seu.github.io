@@ -1,0 +1,216 @@
+{
+  "en": {
+    "nav": {
+      "about": "About",
+      "research": "Research",
+      "members": "Members",
+      "publications": "Publications",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Welcome to Our Research Group",
+      "subtitle": "Advancing knowledge through innovative research and collaboration",
+      "researchBtn": "Our Research",
+      "contactBtn": "Join Us"
+    },
+    "about": {
+      "title": "About Our Lab",
+      "description": "We are a interdisciplinary research group dedicated to advancing the frontiers of knowledge through innovative research methodologies and collaborative approaches.",
+      "focus1": {
+        "title": "Cutting-edge Research",
+        "desc": "Pioneering new approaches and methodologies"
+      },
+      "focus2": {
+        "title": "Collaborative Environment",
+        "desc": "Working together across disciplines"
+      },
+      "focus3": {
+        "title": "Educational Excellence",
+        "desc": "Mentoring the next generation"
+      }
+    },
+    "research": {
+      "title": "Research Areas",
+      "learnMore": "Learn More"
+    },
+    "members": {
+      "title": "Our Members",
+      "faculty": {
+        "title": "Faculty"
+      },
+      "students": {
+        "title": "Students"
+      },
+      "alumni": {
+        "title": "Alumni"
+      },
+      "contact": "Contact",
+      "website": "Website",
+      "researchInterests": "Research Interests",
+      "joinedYear": "Joined {year}",
+      "nowAt": "Now at {position}"
+    },
+    "publications": {
+      "title": "Selected Publications",
+      "filter": {
+        "all": "All",
+        "journal": "Journal Articles",
+        "conference": "Conference Papers"
+      },
+      "viewAll": "View All Publications",
+      "download": "Download PDF",
+      "code": "View Code",
+      "doi": "DOI",
+      "volume": "Vol",
+      "issue": "Issue",
+      "pages": "pp",
+      "keywords": "Keywords",
+      "abstract": "Abstract",
+      "authors": "Authors",
+      "year": "Year",
+      "award": "Award"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "address": {
+        "title": "Address",
+        "content": "Department of Computer Science<br>University Name<br>City, State 12345"
+      },
+      "email": {
+        "title": "Email",
+        "content": "lab@university.edu"
+      },
+      "phone": {
+        "title": "Phone",
+        "content": "+1 (555) 123-4567"
+      },
+      "join": {
+        "title": "Join Our Team",
+        "description": "We are always looking for talented students and researchers to join our group.",
+        "btn": "Apply Now"
+      }
+    },
+    "stats": {
+      "members": "15+",
+      "membersLabel": "Members",
+      "publications": "50+",
+      "publicationsLabel": "Publications",
+      "projects": "10+",
+      "projectsLabel": "Projects"
+    },
+    "footer": {
+      "description": "Advancing knowledge through innovative research",
+      "privacy": "Privacy Policy",
+      "accessibility": "Accessibility",
+      "sitemap": "Sitemap",
+      "copyright": "© 2024 Research Lab. All rights reserved."
+    }
+  },
+  "zh": {
+    "nav": {
+      "about": "关于我们",
+      "research": "研究方向",
+      "members": "团队成员",
+      "publications": "学术成果",
+      "contact": "联系我们"
+    },
+    "hero": {
+      "title": "欢迎加入我们的研究团队",
+      "subtitle": "通过创新研究和合作推进知识发展",
+      "researchBtn": "我们的研究",
+      "contactBtn": "加入我们"
+    },
+    "about": {
+      "title": "关于实验室",
+      "description": "我们是一个跨学科研究团队，致力于通过创新研究方法和协作方式推进知识前沿。",
+      "focus1": {
+        "title": "前沿研究",
+        "desc": "开拓新的方法和理论"
+      },
+      "focus2": {
+        "title": "协作环境",
+        "desc": "跨学科合作"
+      },
+      "focus3": {
+        "title": "教育卓越",
+        "desc": "培养下一代研究者"
+      }
+    },
+    "research": {
+      "title": "研究方向",
+      "learnMore": "了解更多"
+    },
+    "members": {
+      "title": "团队成员",
+      "faculty": {
+        "title": "教职员工"
+      },
+      "students": {
+        "title": "学生"
+      },
+      "alumni": {
+        "title": "校友"
+      },
+      "contact": "联系",
+      "website": "个人主页",
+      "researchInterests": "研究兴趣",
+      "joinedYear": "{year}年加入",
+      "nowAt": "现任职于{position}"
+    },
+    "publications": {
+      "title": "代表性论文",
+      "filter": {
+        "all": "全部",
+        "journal": "期刊论文",
+        "conference": "会议论文"
+      },
+      "viewAll": "查看所有论文",
+      "download": "下载PDF",
+      "code": "查看代码",
+      "doi": "DOI",
+      "volume": "第",
+      "issue": "期",
+      "pages": "页",
+      "keywords": "关键词",
+      "abstract": "摘要",
+      "authors": "作者",
+      "year": "年份",
+      "award": "获奖"
+    },
+    "contact": {
+      "title": "联系我们",
+      "address": {
+        "title": "地址",
+        "content": "计算机科学系<br>大学名称<br>城市，省份 邮编"
+      },
+      "email": {
+        "title": "邮箱",
+        "content": "lab@university.edu"
+      },
+      "phone": {
+        "title": "电话",
+        "content": "+1 (555) 123-4567"
+      },
+      "join": {
+        "title": "加入我们",
+        "description": "我们一直在寻找有才华的学生和研究人员加入我们的团队。",
+        "btn": "立即申请"
+      }
+    },
+    "stats": {
+      "members": "15+",
+      "membersLabel": "成员",
+      "publications": "50+",
+      "publicationsLabel": "论文",
+      "projects": "10+",
+      "projectsLabel": "项目"
+    },
+    "footer": {
+      "description": "通过创新研究推进知识发展",
+      "privacy": "隐私政策",
+      "accessibility": "无障碍访问",
+      "sitemap": "网站地图",
+      "copyright": "© 2024 研究实验室。保留所有权利。"
+    }
+  }
+}

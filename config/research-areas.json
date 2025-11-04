@@ -1,0 +1,64 @@
+{
+  "researchAreas": [
+    {
+      "id": "ai-ml",
+      "title": {
+        "en": "Artificial Intelligence & Machine Learning",
+        "zh": "人工智能与机器学习"
+      },
+      "description": {
+        "en": "Developing novel algorithms and approaches for intelligent systems",
+        "zh": "为智能系统开发新颖的算法和方法"
+      },
+      "icon": "fas fa-brain",
+      "image": "assets/images/research-ai.jpg",
+      "keywords": ["Deep Learning", "Neural Networks", "Computer Vision", "NLP"],
+      "keywords_zh": ["深度学习", "神经网络", "计算机视觉", "自然语言处理"]
+    },
+    {
+      "id": "data-science",
+      "title": {
+        "en": "Data Science & Analytics",
+        "zh": "数据科学与分析"
+      },
+      "description": {
+        "en": "Extracting insights from complex datasets through advanced analytics",
+        "zh": "通过高级分析从复杂数据集中提取洞察"
+      },
+      "icon": "fas fa-chart-line",
+      "image": "assets/images/research-data.jpg",
+      "keywords": ["Big Data", "Statistical Analysis", "Data Visualization", "Predictive Modeling"],
+      "keywords_zh": ["大数据", "统计分析", "数据可视化", "预测建模"]
+    },
+    {
+      "id": "cybersecurity",
+      "title": {
+        "en": "Cybersecurity & Privacy",
+        "zh": "网络安全与隐私"
+      },
+      "description": {
+        "en": "Protecting digital systems and preserving privacy in the digital age",
+        "zh": "在数字时代保护数字系统和维护隐私"
+      },
+      "icon": "fas fa-shield-alt",
+      "image": "assets/images/research-security.jpg",
+      "keywords": ["Network Security", "Cryptography", "Privacy Protection", "Security Protocols"],
+      "keywords_zh": ["网络安全", "密码学", "隐私保护", "安全协议"]
+    },
+    {
+      "id": "hci",
+      "title": {
+        "en": "Human-Computer Interaction",
+        "zh": "人机交互"
+      },
+      "description": {
+        "en": "Designing intuitive interfaces and improving user experiences",
+        "zh": "设计直观界面和改善用户体验"
+      },
+      "icon": "fas fa-hand-pointer",
+      "image": "assets/images/research-hci.jpg",
+      "keywords": ["UX Design", "Interface Design", "User Studies", "Accessibility"],
+      "keywords_zh": ["用户体验设计", "界面设计", "用户研究", "可访问性"]
+    }
+  ]
+}

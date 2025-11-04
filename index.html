@@ -1,1 +1,232 @@
-hello, world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Research Group Homepage</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1 class="lab-name" data-i18n="lab.name">Research Lab</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+                <a href="#research" class="nav-link" data-i18n="nav.research">Research</a>
+                <a href="#members" class="nav-link" data-i18n="nav.members">Members</a>
+                <a href="#publications" class="nav-link" data-i18n="nav.publications">Publications</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                <div class="language-switch">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="zh">中文</button>
+                </div>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title" data-i18n="hero.title">Welcome to Our Research Group</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">Advancing knowledge through innovative research and collaboration</p>
+                    <div class="hero-buttons">
+                        <a href="#research" class="btn btn-primary" data-i18n="hero.researchBtn">Our Research</a>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="hero.contactBtn">Join Us</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="lab-logo-placeholder">
+                        <i class="fas fa-flask"></i>
+                        <span data-i18n="lab.logoAlt">Lab Logo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="about.title">About Our Lab</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="about-description" data-i18n="about.description">
+                            We are a interdisciplinary research group dedicated to advancing the frontiers of knowledge
+                            through innovative research methodologies and collaborative approaches.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-microscope"></i>
+                                <div>
+                                    <h3 data-i18n="about.focus1.title">Cutting-edge Research</h3>
+                                    <p data-i18n="about.focus1.desc">Pioneering new approaches and methodologies</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h3 data-i18n="about.focus2.title">Collaborative Environment</h3>
+                                    <p data-i18n="about.focus2.desc">Working together across disciplines</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h3 data-i18n="about.focus3.title">Educational Excellence</h3>
+                                    <p data-i18n="about.focus3.desc">Mentoring the next generation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-i18n="stats.members">15+</span>
+                            <span class="stat-label" data-i18n="stats.membersLabel">Members</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-i18n="stats.publications">50+</span>
+                            <span class="stat-label" data-i18n="stats.publicationsLabel">Publications</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-i18n="stats.projects">10+</span>
+                            <span class="stat-label" data-i18n="stats.projectsLabel">Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Areas -->
+        <section id="research" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title" data-i18n="research.title">Research Areas</h2>
+                <div class="research-grid" id="researchAreas">
+                    <!-- Research areas will be populated from data.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Members Section -->
+        <section id="members" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="members.title">Our Members</h2>
+
+                <div class="members-section">
+                    <h3 class="subsection-title" data-i18n="members.faculty.title">Faculty</h3>
+                    <div class="members-grid" id="facultyMembers">
+                        <!-- Faculty members will be populated from data.js -->
+                    </div>
+                </div>
+
+                <div class="members-section">
+                    <h3 class="subsection-title" data-i18n="members.students.title">Students</h3>
+                    <div class="members-grid" id="studentMembers">
+                        <!-- Student members will be populated from data.js -->
+                    </div>
+                </div>
+
+                <div class="members-section">
+                    <h3 class="subsection-title" data-i18n="members.alumni.title">Alumni</h3>
+                    <div class="members-grid" id="alumniMembers">
+                        <!-- Alumni will be populated from data.js -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title" data-i18n="publications.title">Selected Publications</h2>
+                <div class="publications-filter">
+                    <button class="filter-btn active" data-filter="all" data-i18n="publications.filter.all">All</button>
+                    <button class="filter-btn" data-filter="journal" data-i18n="publications.filter.journal">Journal Articles</button>
+                    <button class="filter-btn" data-filter="conference" data-i18n="publications.filter.conference">Conference Papers</button>
+                </div>
+                <div class="publications-list" id="publicationsList">
+                    <!-- Publications will be populated from data.js -->
+                </div>
+                <div class="publications-more">
+                    <a href="#" class="btn btn-outline" data-i18n="publications.viewAll">View All Publications</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="contact.title">Contact Us</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3 data-i18n="contact.address.title">Address</h3>
+                                <p data-i18n="contact.address.content">Department of Computer Science<br>University Name<br>City, State 12345</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3 data-i18n="contact.email.title">Email</h3>
+                                <p><a href="mailto:lab@university.edu" data-i18n="contact.email.content">lab@university.edu</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3 data-i18n="contact.phone.title">Phone</h3>
+                                <p data-i18n="contact.phone.content">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3 data-i18n="contact.join.title">Join Our Team</h3>
+                        <p data-i18n="contact.join.description">We are always looking for talented students and researchers to join our group.</p>
+                        <a href="mailto:lab@university.edu?subject=Inquiry about joining the research group" class="btn btn-primary" data-i18n="contact.join.btn">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="lab-name" data-i18n="lab.name">Research Lab</h3>
+                    <p data-i18n="footer.description">Advancing knowledge through innovative research</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="#" data-i18n="footer.accessibility">Accessibility</a>
+                    <a href="#" data-i18n="footer.sitemap">Sitemap</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Google Scholar"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2024 Research Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load scripts in order -->
+    <script src="js/data-loader.js"></script>
+    <script src="js/bibtex-parser.js"></script>
+    <script src="js/publications-renderer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

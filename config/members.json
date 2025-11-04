@@ -1,0 +1,183 @@
+{
+  "members": {
+    "faculty": [
+      {
+        "id": "prof-smith",
+        "name": "Dr. Jane Smith",
+        "name_zh": "简·史密斯博士",
+        "position": {
+          "en": "Professor & Lab Director",
+          "zh": "教授 & 实验室主任"
+        },
+        "email": "jane.smith@university.edu",
+        "website": "https://janesmith.university.edu",
+        "image": "assets/images/members/jane-smith.jpg",
+        "bio": {
+          "en": "Expertise in machine learning and computer vision with 15+ years of research experience.",
+          "zh": "机器学习和计算机视觉专家，拥有15年以上研究经验。"
+        },
+        "research_interests": [
+          {
+            "en": "Deep Learning",
+            "zh": "深度学习"
+          },
+          {
+            "en": "Computer Vision",
+            "zh": "计算机视觉"
+          },
+          {
+            "en": "AI Ethics",
+            "zh": "人工智能伦理"
+          }
+        ],
+        "social": {
+          "google_scholar": "https://scholar.google.com/citations?user=janesmith",
+          "linkedin": "https://linkedin.com/in/janesmith",
+          "twitter": "https://twitter.com/janesmith"
+        }
+      },
+      {
+        "id": "prof-chen",
+        "name": "Dr. Wei Chen",
+        "name_zh": "陈伟博士",
+        "position": {
+          "en": "Associate Professor",
+          "zh": "副教授"
+        },
+        "email": "wei.chen@university.edu",
+        "website": "https://weichen.university.edu",
+        "image": "assets/images/members/wei-chen.jpg",
+        "bio": {
+          "en": "Specializing in cybersecurity and privacy-preserving technologies.",
+          "zh": "专注于网络安全和隐私保护技术。"
+        },
+        "research_interests": [
+          {
+            "en": "Cryptography",
+            "zh": "密码学"
+          },
+          {
+            "en": "Network Security",
+            "zh": "网络安全"
+          },
+          {
+            "en": "Privacy Protection",
+            "zh": "隐私保护"
+          }
+        ],
+        "social": {
+          "google_scholar": "https://scholar.google.com/citations?user=weichen",
+          "linkedin": "https://linkedin.com/in/weichen"
+        }
+      }
+    ],
+    "students": [
+      {
+        "id": "phd-johnson",
+        "name": "Alice Johnson",
+        "name_zh": "爱丽丝·约翰逊",
+        "position": {
+          "en": "PhD Student",
+          "zh": "博士生"
+        },
+        "email": "alice.johnson@university.edu",
+        "image": "assets/images/members/alice-johnson.jpg",
+        "research_interests": [
+          {
+            "en": "Natural Language Processing",
+            "zh": "自然语言处理"
+          },
+          {
+            "en": "Machine Learning",
+            "zh": "机器学习"
+          }
+        ],
+        "joined_year": 2022
+      },
+      {
+        "id": "ms-wang",
+        "name": "Li Wang",
+        "name_zh": "王力",
+        "position": {
+          "en": "Master's Student",
+          "zh": "硕士生"
+        },
+        "email": "li.wang@university.edu",
+        "image": "assets/images/members/li-wang.jpg",
+        "research_interests": [
+          {
+            "en": "Human-Computer Interaction",
+            "zh": "人机交互"
+          },
+          {
+            "en": "UX Design",
+            "zh": "用户体验设计"
+          }
+        ],
+        "joined_year": 2023
+      },
+      {
+        "id": "phd-davis",
+        "name": "Bob Davis",
+        "name_zh": "鲍勃·戴维斯",
+        "position": {
+          "en": "PhD Student",
+          "zh": "博士生"
+        },
+        "email": "bob.davis@university.edu",
+        "image": "assets/images/members/bob-davis.jpg",
+        "research_interests": [
+          {
+            "en": "Data Science",
+            "zh": "数据科学"
+          },
+          {
+            "en": "Big Data Analytics",
+            "zh": "大数据分析"
+          }
+        ],
+        "joined_year": 2021
+      }
+    ],
+    "alumni": [
+      {
+        "id": "alumni-martinez",
+        "name": "Dr. Carlos Martinez",
+        "name_zh": "卡洛斯·马丁内斯博士",
+        "position": {
+          "en": "Now at Google Research",
+          "zh": "现任职于谷歌研究院"
+        },
+        "email": "carlos.martinez@gmail.com",
+        "image": "assets/images/members/carlos-martinez.jpg",
+        "research_interests": [
+          {
+            "en": "Computer Vision",
+            "zh": "计算机视觉"
+          }
+        ],
+        "years_in_lab": "2019-2023",
+        "current_position": "Research Scientist, Google"
+      },
+      {
+        "id": "alumni-kumar",
+        "name": "Dr. Priya Kumar",
+        "name_zh": "普里娅·库马尔博士",
+        "position": {
+          "en": "Now at MIT",
+          "zh": "现任职于麻省理工学院"
+        },
+        "email": "priya.kumar@mit.edu",
+        "image": "assets/images/members/priya-kumar.jpg",
+        "research_interests": [
+          {
+            "en": "AI Ethics",
+            "zh": "人工智能伦理"
+          }
+        ],
+        "years_in_lab": "2020-2024",
+        "current_position": "Postdoctoral Fellow, MIT"
+      }
+    ]
+  }
+}

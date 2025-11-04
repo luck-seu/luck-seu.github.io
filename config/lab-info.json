@@ -1,0 +1,46 @@
+{
+  "lab": {
+    "name": {
+      "en": "Advanced Research Laboratory",
+      "zh": "前沿研究实验室"
+    },
+    "shortName": {
+      "en": "ARL",
+      "zh": "前沿实验室"
+    },
+    "logo": "assets/images/lab-logo.png",
+    "description": {
+      "en": "Advancing knowledge through innovative research and collaboration",
+      "zh": "通过创新研究和合作推进知识发展"
+    },
+    "university": {
+      "en": "University Name",
+      "zh": "大学名称"
+    },
+    "department": {
+      "en": "Department of Computer Science",
+      "zh": "计算机科学系"
+    }
+  },
+  "contact": {
+    "email": "lab@university.edu",
+    "phone": "+1 (555) 123-4567",
+    "address": {
+      "en": "Department of Computer Science<br>University Name<br>City, State 12345",
+      "zh": "计算机科学系<br>大学名称<br>城市，省份 邮编"
+    },
+    "office": "Room 123, Science Building"
+  },
+  "social": {
+    "twitter": "https://twitter.com/researchlab",
+    "linkedin": "https://linkedin.com/company/researchlab",
+    "github": "https://github.com/researchlab",
+    "googleScholar": "https://scholar.google.com/citations?user=LABID"
+  },
+  "stats": {
+    "members": "15+",
+    "publications": "50+",
+    "projects": "10+",
+    "citations": "1000+"
+  }
+}
