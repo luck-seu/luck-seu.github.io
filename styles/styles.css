@@ -785,17 +785,18 @@ a:hover {
   color: var(--color-text-secondary);
   transition: all var(--transition-fast);
   text-decoration: none;
-  font-size: 0;
-  line-height: 0;
+  overflow: hidden;
 }
 
 .member-link i {
   font-size: 14px;
   line-height: 1;
+  display: block;
 }
 
-.member-link:empty::before {
-  content: '';
+/* Hide any text content that might appear */
+.member-link span:not([class]) {
+  display: none;
 }
 
 .member-link:hover {
