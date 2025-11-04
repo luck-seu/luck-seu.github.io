@@ -123,18 +123,18 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: 0 1rem;
 }
 
 @media (min-width: 640px) {
   .container {
-    padding: 0 var(--spacing-lg);
+    padding: 0 2rem;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    padding: 0 var(--spacing-xl);
+    padding: 0 2.5rem;
   }
 }
 
@@ -244,7 +244,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spacing-md) 0;
+  padding: 1rem 0;
 }
 
 .nav-brand .lab-name {
@@ -362,7 +362,7 @@ a:hover {
 
 /* Hero Section */
 .hero {
-  padding: calc(100px + var(--spacing-4xl)) 0 var(--spacing-4xl);
+  padding: calc(100px + 4rem) 0 4rem;
   background: linear-gradient(135deg, var(--color-background-alt) 0%, var(--color-background) 100%);
   overflow: hidden;
 }
@@ -460,7 +460,7 @@ a:hover {
 
 /* Sections */
 .section {
-  padding: var(--spacing-4xl) 0;
+  padding: 4rem 0;
 }
 
 .section-alt {
