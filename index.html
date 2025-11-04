@@ -3,292 +3,386 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title">LUCK Research Group</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <meta name="description" content="LUCK Research Group - Advancing knowledge through innovative research in artificial intelligence, machine learning, and computer vision">
-    <meta property="og:title" content="LUCK Research Group">
-    <meta property="og:description" content="Advancing knowledge through innovative research in AI, ML, and computer vision">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#2563eb">
+    <title>Advanced Research Laboratory</title>
+    <meta name="description" content="Advancing knowledge through innovative research and collaboration">
+    <meta name="keywords" content="research, academic, computer science, machine learning">
+
+    <!-- Preconnect to fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Professional Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 <body>
     <!-- Header Navigation -->
     <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
+        <div class="container">
+            <nav class="nav">
                 <div class="nav-brand">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <span class="logo-text">LUCK</span>
-                        </div>
-                    </div>
-                    <h1 class="brand-name" data-i18n="lab.name">Research Group</h1>
+                    <h1 class="site-title">ARL</h1>
+                    <span class="site-subtitle">Advanced Research Laboratory</span>
                 </div>
 
-                <div class="nav-menu">
-                    <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
-                    <a href="#research" class="nav-link" data-i18n="nav.research">Research</a>
-                    <a href="#team" class="nav-link" data-i18n="nav.team">Team</a>
-                    <a href="#publications" class="nav-link" data-i18n="nav.publications">Publications</a>
-                    <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
-                    <div class="language-toggle">
-                        <button class="lang-btn active" data-lang="en">EN</button>
-                        <button class="lang-btn" data-lang="zh">中文</button>
-                    </div>
-                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#research" class="nav-link">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#people" class="nav-link">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#publications" class="nav-link">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
 
-                <div class="mobile-menu-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="nav-actions">
+                    <button class="lang-toggle" data-lang="en">EN</button>
+                    <button class="lang-toggle" data-lang="zh">中文</button>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav">
-        <div class="mobile-nav-container">
-            <a href="#home" class="mobile-nav-link active" data-i18n="nav.home">Home</a>
-            <a href="#research" class="mobile-nav-link" data-i18n="nav.research">Research</a>
-            <a href="#team" class="mobile-nav-link" data-i18n="nav.team">Team</a>
-            <a href="#publications" class="mobile-nav-link" data-i18n="nav.publications">Publications</a>
-            <a href="#contact" class="mobile-nav-link" data-i18n="nav.contact">Contact</a>
-        </div>
-    </div>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title" data-i18n="hero.title">Welcome to LUCK Research Group</h1>
-                    <p class="hero-subtitle" data-i18n="hero.subtitle">Advancing knowledge through innovative research in artificial intelligence and computer vision</p>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-number" data-i18n="stats.members">20+</span>
-                            <span class="stat-label" data-i18n="stats.membersLabel">Researchers</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-i18n="stats.publications">80+</span>
-                            <span class="stat-label" data-i18n="stats.publicationsLabel">Publications</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-i18n="stats.projects">15+</span>
-                            <span class="stat-label" data-i18n="stats.projectsLabel">Projects</span>
-                        </div>
-                    </div>
-                    <div class="hero-buttons">
-                        <a href="#research" class="btn btn-primary" data-i18n="hero.researchBtn">Our Research</a>
-                        <a href="#contact" class="btn btn-outline" data-i18n="hero.contactBtn">Join Us</a>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="hero-graphic">
-                        <div class="floating-shape shape-1"></div>
-                        <div class="floating-shape shape-2"></div>
-                        <div class="floating-shape shape-3"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research" class="research-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="research.title">Research Areas</h2>
-                <p class="section-subtitle" data-i18n="research.subtitle">Exploring the frontiers of AI and computer vision</p>
-            </div>
-            <div class="research-grid" id="researchAreas">
-                <!-- Research areas will be populated dynamically -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="team-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="team.title">Our Team</h2>
-                <p class="section-subtitle" data-i18n="team.subtitle">Meet the brilliant minds behind our research</p>
-            </div>
-
-            <div class="team-tabs">
-                <button class="tab-btn active" data-category="faculty" data-i18n="team.faculty">Faculty</button>
-                <button class="tab-btn" data-category="students" data-i18n="team.students">Students</button>
-                <button class="tab-btn" data-category="alumni" data-i18n="team.alumni">Alumni</button>
-            </div>
-
-            <div class="team-container">
-                <div class="team-grid faculty-grid" id="facultyTeam">
-                    <!-- Faculty members will be populated dynamically -->
-                </div>
-                <div class="team-grid students-grid" id="studentTeam">
-                    <!-- Students will be populated dynamically -->
-                </div>
-                <div class="team-grid alumni-grid" id="alumniTeam" style="display: none;">
-                    <!-- Alumni will be populated dynamically -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="publications-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="publications.title">Recent Publications</h2>
-                <p class="section-subtitle" data-i18n="publications.subtitle">Our latest contributions to the field</p>
-            </div>
-
-            <div class="publications-controls">
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all" data-i18n="publications.filter.all">All</button>
-                    <button class="filter-btn" data-filter="journal" data-i18n="publications.filter.journal">Journals</button>
-                    <button class="filter-btn" data-filter="conference" data-i18n="publications.filter.conference">Conferences</button>
-                    <button class="filter-btn" data-filter="workshop" data-i18n="publications.filter.workshop">Workshops</button>
-                </div>
-                <div class="sort-controls">
-                    <label data-i18n="publications.sort">Sort by:</label>
-                    <select id="sortPublications">
-                        <option value="year" data-i18n="publications.sort.year">Year</option>
-                        <option value="citations" data-i18n="publications.sort.citations">Citations</option>
-                        <option value="title" data-i18n="publications.sort.title">Title</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="publications-list" id="publicationsList">
-                <!-- Publications will be populated dynamically -->
-            </div>
-
-            <div class="publications-more">
-                <a href="#" class="btn btn-outline" data-i18n="publications.viewAll">View All Publications</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
-                <p class="section-subtitle" data-i18n="contact.subtitle">Join our research community</p>
-            </div>
-
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3 data-i18n="contact.email.title">Email</h3>
-                            <p><a href="mailto:contact@luck-group.edu" data-i18n="contact.email.content">contact@luck-group.edu</a></p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3 data-i18n="contact.location.title">Location</h3>
-                            <p data-i18n="contact.location.content">Department of Computer Science<br>Your University<br>City, Country</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3 data-i18n="contact.phone.title">Phone</h3>
-                            <p data-i18n="contact.phone.content">+1 (555) 123-4567</p>
-                        </div>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-main">Advanced Research Laboratory</span>
+                        <span class="title-sub">Advancing the Frontiers of Computer Science</span>
+                    </h1>
+                    <p class="hero-description">
+                        We are a interdisciplinary research group dedicated to advancing knowledge
+                        through innovative research in artificial intelligence, systems, and theory.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#research" class="btn btn-primary">Explore Our Research</a>
+                        <a href="#people" class="btn btn-outline">Join Our Team</a>
                     </div>
                 </div>
 
-                <div class="contact-cta">
-                    <h3 data-i18n="contact.join.title">Join Our Team</h3>
-                    <p data-i18n="contact.join.description">We are always looking for talented students and researchers to join our group.</p>
-                    <a href="mailto:contact@luck-group.edu?subject=Joining LUCK Research Group" class="btn btn-primary" data-i18n="contact.join.btn">Apply Now</a>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Members</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Publications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="12">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="social-links">
-                        <h4 data-i18n="contact.social">Follow Us</h4>
-                        <div class="social-icons">
-                            <a href="#" aria-label="Twitter" class="social-icon">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" aria-label="LinkedIn" class="social-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" aria-label="GitHub" class="social-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" aria-label="Google Scholar" class="social-icon">
-                                <i class="fab fa-google"></i>
-                            </a>
+        <!-- Research Section -->
+        <section id="research" class="section research">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Research Areas</h2>
+                    <p class="section-subtitle">
+                        We work on fundamental problems in computer science with real-world impact
+                    </p>
+                </header>
+
+                <div class="research-grid" id="research-grid">
+                    <!-- Research areas will be dynamically populated -->
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="section news">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Latest News</h2>
+                    <p class="section-subtitle">Recent achievements and updates from our lab</p>
+                </header>
+
+                <div class="news-grid">
+                    <article class="news-item featured">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <time class="news-date">December 2024</time>
+                                <span class="news-tag">Award</span>
+                            </div>
+                            <h3 class="news-title">
+                                Best Paper Award at NeurIPS 2024
+                            </h3>
+                            <p class="news-excerpt">
+                                Our paper on "Efficient Neural Architecture Search" received the best paper award
+                                at the prestigious NeurIPS conference.
+                            </p>
+                            <a href="#" class="news-link">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <time class="news-date">November 2024</time>
+                                <span class="news-tag">Publication</span>
+                            </div>
+                            <h3 class="news-title">
+                                New Publication in Nature Machine Intelligence
+                            </h3>
+                            <p class="news-excerpt">
+                                Our collaborative work on interpretable AI systems has been published in Nature MI.
+                            </p>
+                            <a href="#" class="news-link">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-item">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <time class="news-date">October 2024</time>
+                                <span class="news-tag">Grant</span>
+                            </div>
+                            <h3 class="news-title">
+                                $2.5M NSF Grant for AI Research
+                            </h3>
+                            <p class="news-excerpt">
+                                We've been awarded a major grant to advance trustworthy AI systems research.
+                            </p>
+                            <a href="#" class="news-link">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- People Section -->
+        <section id="people" class="section people">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Our Team</h2>
+                    <p class="section-subtitle">
+                        Meet the brilliant minds behind our research
+                    </p>
+                </header>
+
+                <div class="people-tabs">
+                    <div class="tab-nav">
+                        <button class="tab-btn active" data-tab="faculty">Faculty</button>
+                        <button class="tab-btn" data-tab="students">Students</button>
+                        <button class="tab-btn" data-tab="alumni">Alumni</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="faculty">
+                            <div class="people-grid" id="faculty-grid">
+                                <!-- Faculty members will be dynamically populated -->
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="students">
+                            <div class="people-grid" id="students-grid">
+                                <!-- Students will be dynamically populated -->
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="alumni">
+                            <div class="people-grid" id="alumni-grid">
+                                <!-- Alumni will be dynamically populated -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section publications">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Selected Publications</h2>
+                    <p class="section-subtitle">
+                        Recent contributions to the academic community
+                    </p>
+                </header>
+
+                <div class="pub-controls">
+                    <div class="pub-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="2024">2024</button>
+                        <button class="filter-btn" data-filter="2023">2023</button>
+                        <button class="filter-btn" data-filter="conference">Conferences</button>
+                        <button class="filter-btn" data-filter="journal">Journals</button>
+                    </div>
+
+                    <div class="pub-search">
+                        <input type="search" placeholder="Search publications..." id="pub-search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+
+                <div class="publications-list" id="publications-list">
+                    <!-- Publications will be dynamically populated -->
+                </div>
+
+                <div class="pub-footer">
+                    <a href="#" class="btn btn-outline">View All Publications</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">
+                        We're always interested in collaboration and new talent
+                    </p>
+                </header>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Department of Computer Science<br>
+                                   University Name<br>
+                                   City, State 12345</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p><a href="mailto:lab@university.edu">lab@university.edu</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Send us a message</h3>
+                        <form class="form">
+                            <div class="form-group">
+                                <input type="text" class="form-input" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-input" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-input" required>
+                                    <option value="">Select Interest</option>
+                                    <option value="research">Research Collaboration</option>
+                                    <option value="join">Joining the Lab</option>
+                                    <option value="media">Media Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-input" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
-                    <h3 class="footer-title" data-i18n="lab.name">LUCK Research Group</h3>
-                    <p data-i18n="footer.tagline">Advancing knowledge through innovative research</p>
+                <div class="footer-brand">
+                    <h3 class="footer-title">Advanced Research Laboratory</h3>
+                    <p class="footer-description">
+                        Advancing knowledge through innovative research and collaboration
+                    </p>
                 </div>
 
                 <div class="footer-links">
-                    <h4 data-i18n="footer.links">Quick Links</h4>
-                    <ul>
-                        <li><a href="#research" data-i18n="nav.research">Research</a></li>
-                        <li><a href="#team" data-i18n="nav.team">Team</a></li>
-                        <li><a href="#publications" data-i18n="nav.publications">Publications</a></li>
-                        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-                    </ul>
+                    <div class="footer-section">
+                        <h4>Research</h4>
+                        <ul>
+                            <li><a href="#research">Publications</a></li>
+                            <li><a href="#research">Projects</a></li>
+                            <li><a href="#research">Areas</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>People</h4>
+                        <ul>
+                            <li><a href="#people">Faculty</a></li>
+                            <li><a href="#people">Students</a></li>
+                            <li><a href="#people">Alumni</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="footer-social">
-                    <h4 data-i18n="footer.social">Connect</h4>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Twitter" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" aria-label="LinkedIn" class="social-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" aria-label="GitHub" class="social-icon">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" aria-label="Google Scholar" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Google Scholar"><i class="fab fa-google"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p data-i18n="footer.copyright">© 2024 LUCK Research Group. All rights reserved.</p>
+                <p>&copy; 2024 Advanced Research Laboratory. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/data-loader.js"></script>
-    <script src="js/bibtex-parser.js"></script>
-    <script src="js/publications-renderer.js"></script>
-    <script src="js/activities-renderer.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
