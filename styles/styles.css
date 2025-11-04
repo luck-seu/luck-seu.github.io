@@ -245,6 +245,24 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .nav-brand .lab-name {
