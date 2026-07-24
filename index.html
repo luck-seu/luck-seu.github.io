@@ -39,7 +39,7 @@
     <!-- ==================== PAGE: HOME ==================== -->
     <section class="page active" data-page="home" id="page-home">
 
-      <!-- Hero -->
+      <!-- Upper: Title + Intro + Directions -->
       <div class="hero">
         <div class="hero-bg">
           <div class="blob blob-1"></div>
@@ -56,22 +56,9 @@
           <p class="hero-desc">
             泛在知识智能研究组（Linking Ubiquities with Connected Knowledge，<strong>LUCK</strong>）隶属于东南大学计算机科学与工程学院，由<strong>金嘉晖老师</strong>管理，研究数据智能体、大数据处理、城市计算等方向，推动智能数据应用与知识智能发展。
           </p>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="float-card card-a"><i data-lucide="database"></i><span>数据</span></div>
-          <div class="float-card card-b"><i data-lucide="network"></i><span>知识</span></div>
-          <div class="float-card card-c"><i data-lucide="sparkles"></i><span>智能</span></div>
-          <div class="float-card card-main"><span>LUCK</span></div>
-        </div>
-      </div>
-
-      <!-- Research Direction Summary Boxes -->
-      <div class="dir-summary">
-        <div class="container">
-          <div class="section-label">What we explore</div>
-          <h2 class="section-title">研究方向</h2>
-          <p class="section-desc">从数据到知识，从感知到决策——构建连接泛在数据的智能系统</p>
-          <div class="ds-grid">
+          <div class="home-dirs">
+            <h2 class="home-dirs-title">研究方向</h2>
+            <div class="ds-grid">
             <div class="ds-card" data-goto="dir-agent">
               <div class="ds-icon"><i data-lucide="bot"></i></div>
               <h3>数据智能体</h3>
@@ -118,10 +105,16 @@
             </div>
           </div>
         </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="float-card card-a"><i data-lucide="database"></i><span>数据</span></div>
+          <div class="float-card card-b"><i data-lucide="network"></i><span>知识</span></div>
+          <div class="float-card card-c"><i data-lucide="sparkles"></i><span>智能</span></div>
+          <div class="float-card card-main"><span>LUCK</span></div>
+        </div>
       </div>
 
-      <!-- News (stacked strips, scrollable) -->
-      <div class="home-news">
+      <!-- Lower: LUCK News -->
+      <div class="home-lower">
         <div class="container">
           <div class="section-label">
             <span class="live-dot"></span> LUCK News
