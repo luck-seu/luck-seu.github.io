@@ -1,38 +1,9 @@
-const header = document.querySelector('.site-header');
-const menuButton = document.querySelector('.menu-button');
+const header = document.querySelector('.header');
+const menu = document.querySelector('.menu');
 const mobileNav = document.querySelector('.mobile-nav');
-const menuIcon = menuButton?.querySelector('i');
-
-function setMenu(open) {
-  if (!menuButton || !mobileNav) return;
-  menuButton.setAttribute('aria-expanded', String(open));
-  menuButton.setAttribute('aria-label', open ? '关闭导航' : '打开导航');
-  mobileNav.hidden = !open;
-  if (menuIcon) menuIcon.setAttribute('data-lucide', open ? 'x' : 'menu');
-  if (window.lucide) window.lucide.createIcons();
-}
-
-menuButton?.addEventListener('click', () => {
-  setMenu(menuButton.getAttribute('aria-expanded') !== 'true');
-});
-
-mobileNav?.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => setMenu(false));
-});
-
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 760) setMenu(false);
-});
-
-function updateHeader() {
-  header?.classList.toggle('scrolled', window.scrollY > 16);
-}
-
-window.addEventListener('scroll', updateHeader, { passive: true });
-updateHeader();
-
+menu?.addEventListener('click', () => { const open = menu.getAttribute('aria-expanded') === 'true'; menu.setAttribute('aria-expanded', String(!open)); mobileNav.hidden = open; menu.innerHTML = `<i data-lucide="${open ? 'menu' : 'x'}"></i>`; window.lucide?.createIcons(); });
+mobileNav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.setAttribute('aria-expanded','false'); mobileNav.hidden = true; }));
+window.addEventListener('scroll', () => header?.classList.toggle('scrolled', scrollY > 12), {passive:true});
+document.querySelectorAll('.filters button').forEach(button => button.addEventListener('click', () => { document.querySelectorAll('.filters button').forEach(b => b.classList.remove('active')); button.classList.add('active'); const filter = button.dataset.filter; document.querySelectorAll('.result-grid article').forEach(card => { card.hidden = filter !== 'all' && card.dataset.type !== filter; }); }));
 document.getElementById('year').textContent = new Date().getFullYear();
-
-window.addEventListener('DOMContentLoaded', () => {
-  if (window.lucide) window.lucide.createIcons();
-});
+window.addEventListener('DOMContentLoaded', () => window.lucide?.createIcons());
