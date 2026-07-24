@@ -156,6 +156,8 @@ h1,h2,h3,h4,p{margin:0}
 }
 .hero-sub{margin-top:10px;font-size:16px;color:var(--muted);font-style:italic;font-weight:500}
 .hero-desc{max-width:900px;margin:20px auto 0;font-size:16px;color:var(--ink-light);line-height:1.85;text-align:justify}
+.hero-desc a{color:var(--warm);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.hero-desc a:hover{color:var(--warm-dark)}
 
 /* Directions inside Hero */
 .home-dirs{margin-top:48px;text-align:left}
