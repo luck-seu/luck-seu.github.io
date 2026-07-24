@@ -101,7 +101,7 @@ h1,h2,h3,h4,p{margin:0}
   font-size:clamp(32px,4vw,48px);font-weight:800;
   line-height:1.15;letter-spacing:-.025em;margin-bottom:14px;
 }
-.section-desc{max-width:520px;color:var(--muted);font-size:15px}
+.section-desc{color:var(--muted);font-size:15px}
 .highlight{color:var(--warm)}
 
 /* -------- BUTTONS & LINKS -------- */

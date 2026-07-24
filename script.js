@@ -77,13 +77,18 @@ document.addEventListener('DOMContentLoaded', () => {
   onScroll();
 
   // ---------- Result Filter ----------
+  // Init: show papers by default
+  resultStrips.forEach(strip => {
+    strip.hidden = strip.dataset.type !== 'paper';
+  });
+
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       const filter = btn.dataset.filter;
       resultStrips.forEach(strip => {
-        strip.hidden = filter !== 'all' && strip.dataset.type !== filter;
+        strip.hidden = strip.dataset.type !== filter;
       });
     });
   });
