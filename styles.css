@@ -237,11 +237,12 @@ h1,h2,h3,h4,p{margin:0}
   position:relative;min-height:300px;overflow:hidden;background:var(--line-light);
 }
 .dir-visual img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.dir-card:hover .dir-visual img{transform:scale(1.04)}
+.dir-card:hover .dir-visual img{transform:scale(1.08)}
 .dir-number{
   position:absolute;top:20px;left:20px;z-index:2;
-  font-size:60px;font-weight:900;color:#fff;line-height:1;
-  text-shadow:0 2px 12px rgba(0,0,0,0.15);
+  width:64px;height:64px;display:flex;align-items:center;justify-content:center;
+  border-radius:50%;font-size:22px;font-weight:800;color:#fff;line-height:1;
+  background:rgba(0,0,0,0.35);backdrop-filter:blur(6px);
 }
 .dir-body{padding:40px 36px;display:flex;flex-direction:column}
 .dir-icon{
