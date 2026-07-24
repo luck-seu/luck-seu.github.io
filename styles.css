@@ -159,8 +159,8 @@ h1,h2,h3,h4,p{margin:0}
 .home-dirs{margin-top:48px;text-align:left}
 .home-dirs-title{
   font-size:22px;font-weight:800;color:var(--ink);
-  padding-bottom:12px;border-bottom:2px solid var(--warm);
-  display:block;margin-bottom:24px;text-align:left;
+  padding-bottom:8px;border-bottom:2px solid var(--warm);
+  display:inline-block;margin-bottom:24px;
 }
 .ds-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .ds-card{
@@ -195,10 +195,14 @@ h1,h2,h3,h4,p{margin:0}
 .live-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#4ecb71;animation:pulse-dot 1.8s ease-in-out infinite}
 @keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:.35}}
 .news-stack{max-height:520px;overflow-y:auto;margin-top:28px;padding-right:8px;
-  scrollbar-width:thin;scrollbar-color:var(--line) transparent;
+  scrollbar-width:thin;scrollbar-color:var(--warm) var(--line-light);
 }
-.news-stack::-webkit-scrollbar{width:5px}
-.news-stack::-webkit-scrollbar-thumb{background:var(--line);border-radius:10px}
+.news-stack::-webkit-scrollbar{width:9px}
+.news-stack::-webkit-scrollbar-track{background:var(--line-light);border-radius:999px}
+.news-stack::-webkit-scrollbar-thumb{
+  background:linear-gradient(180deg,var(--warm),var(--teal));
+  border-radius:999px;border:2px solid var(--white);
+}
 .news-strip{
   display:grid;grid-template-columns:80px 1fr;gap:20px;
   padding:20px 0;border-bottom:1px solid var(--line);
@@ -254,8 +258,12 @@ h1,h2,h3,h4,p{margin:0}
 .dir-papers h4{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
 .dir-papers li{padding:7px 0;border-bottom:1px solid var(--line-light)}
 .dir-papers ul{max-height:180px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
-.dir-papers ul::-webkit-scrollbar{width:4px}
-.dir-papers ul::-webkit-scrollbar-thumb{background:var(--line);border-radius:10px}
+.dir-papers ul::-webkit-scrollbar{width:7px}
+.dir-papers ul::-webkit-scrollbar-track{background:var(--line-light);border-radius:999px}
+.dir-papers ul::-webkit-scrollbar-thumb{
+  background:linear-gradient(180deg,var(--warm),var(--teal));
+  border-radius:999px;border:1.5px solid var(--white);
+}
 .dir-papers li:last-child{border-bottom:none}
 .dir-papers a{
   display:flex;justify-content:space-between;align-items:baseline;gap:12px;
@@ -287,8 +295,12 @@ h1,h2,h3,h4,p{margin:0}
   margin-top:32px;max-height:620px;overflow-y:auto;padding-right:8px;
   scrollbar-width:thin;scrollbar-color:var(--line) transparent;
 }
-.results-scroll::-webkit-scrollbar{width:5px}
-.results-scroll::-webkit-scrollbar-thumb{background:var(--line);border-radius:10px}
+.results-scroll::-webkit-scrollbar{width:9px}
+.results-scroll::-webkit-scrollbar-track{background:var(--line-light);border-radius:999px}
+.results-scroll::-webkit-scrollbar-thumb{
+  background:linear-gradient(180deg,var(--warm),var(--teal));
+  border-radius:999px;border:2px solid var(--white);
+}
 .result-strips{display:flex;flex-direction:column;gap:0}
 .result-strip{
   display:grid;grid-template-columns:120px 1fr auto;gap:20px;align-items:center;
