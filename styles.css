@@ -397,7 +397,7 @@ h1,h2,h3,h4,p{margin:0}
 /* ============================================
    FOOTER
    ============================================ */
-.footer{padding:32px 0;background:var(--paper);border-top:1px solid var(--line)}
+.footer{padding:32px 0;background:linear-gradient(170deg,#fef9f4 0%,#fef5ee 30%,#fdf2eb 60%,#fef9f4 100%)}
 .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .footer-brand{display:flex;align-items:center;gap:16px}
 .footer-brand img{width:120px}
