@@ -234,12 +234,6 @@ h1,h2,h3,h4,p{margin:0}
 }
 .dir-visual img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
 .dir-card:hover .dir-visual img{transform:scale(1.04)}
-.dir-visual-gradient{
-  display:flex;align-items:center;justify-content:center;
-}
-.dir-grad-agent{background:linear-gradient(135deg,#4a3080,#7352b8)}
-.dir-grad-bigdata{background:linear-gradient(135deg,#1a5c4a,#2d8a6e)}
-.gradient-text{font-size:40px;font-weight:900;color:#fff;text-align:center;line-height:1.1;letter-spacing:-.02em}
 .dir-number{
   position:absolute;top:20px;left:20px;z-index:2;
   font-size:60px;font-weight:900;color:#fff;line-height:1;
