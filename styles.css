@@ -143,9 +143,15 @@ h1,h2,h3,h4,p{margin:0}
 
 /* Home Upper */
 .home-upper{
-  padding:140px 0 80px;
+  position:relative;padding:150px 0 80px;overflow:hidden;
   background:linear-gradient(170deg,#fef9f4 0%,#fef5ee 30%,#fdf2eb 60%,#fef9f4 100%);
 }
+.home-upper .container{position:relative;z-index:2}
+.hero-bg{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:0.5}
+.blob-1{width:420px;height:420px;background:#fce0d3;top:-120px;right:-80px}
+.blob-2{width:300px;height:300px;background:#d3ede8;bottom:10%;left:-100px}
+.blob-3{width:200px;height:200px;background:#fcd8cc;top:50%;left:45%}
 .home-badge{
   display:inline-flex;align-items:center;gap:8px;margin-bottom:28px;
   padding:8px 16px;border-radius:100px;
@@ -420,7 +426,7 @@ h1,h2,h3,h4,p{margin:0}
   :root{--wrap:min(100% - 32px,700px)}
   .nav-links{display:none}
   .nav-toggle{display:flex}
-  .home-upper{padding:110px 0 60px}
+  .home-upper{padding:120px 0 60px}
   .ds-grid{grid-template-columns:1fr}
   .dir-card,.dir-reverse{grid-template-columns:1fr}
   .dir-reverse .dir-visual{order:-1}
