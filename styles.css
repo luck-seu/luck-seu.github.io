@@ -474,3 +474,26 @@ h1,h2,h3,h4,p{margin:0}
   #page-directions,#page-results,#page-members{padding:100px 0 70px}
   .join-page-wrap{padding:100px 0 70px}
 }
+
+/* -------- Language Switch (CN/EN) -------- */
+.lang-switch{
+  display:flex;align-items:center;flex-shrink:0;
+  border:1px solid var(--line);border-radius:999px;overflow:hidden;
+  background:var(--white);
+}
+.lang-switch button{
+  padding:6px 12px;font-size:12px;font-weight:700;letter-spacing:.4px;
+  color:var(--ink-light);background:transparent;border:none;cursor:pointer;
+  font-family:inherit;transition:color .2s,background .2s;
+}
+.lang-switch button.active{background:var(--warm);color:#fff}
+.lang-switch button:not(.active):hover{color:var(--warm)}
+/* hide switch on Join page (content is not translated) */
+body.page-join .lang-switch{display:none}
+/* avoid flash of wrong language while i18n applies (failsafe in <head>) */
+html.i18n-boot body{visibility:hidden}
+@media(max-width:860px){
+  .nav-inner{gap:12px}
+  .lang-switch{margin-left:auto}
+  .nav-toggle{margin-left:0}
+}

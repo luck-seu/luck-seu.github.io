@@ -11,6 +11,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
   <link rel="stylesheet" href="styles.css">
+  <script>
+    // Set language early (default EN) to avoid flash of wrong language
+    (function () {
+      var lang = 'en';
+      try { lang = localStorage.getItem('luck-lang') || 'en'; } catch (e) {}
+      var d = document.documentElement;
+      d.setAttribute('data-lang', lang);
+      d.classList.add('i18n-boot');
+      setTimeout(function () { d.classList.remove('i18n-boot'); }, 1200);
+    })();
+  </script>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -22,12 +33,16 @@
         <img src="assets/luck-logo.png" alt="LUCK">
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="#home" data-nav="home" class="active">首页</a>
-        <a href="#directions" data-nav="directions">研究方向</a>
-        <a href="#results" data-nav="results">研究成果</a>
-        <a href="#members" data-nav="members">研究成员</a>
-        <a href="#join" data-nav="join">加入我们</a>
+        <a href="#home" data-nav="home" class="active" data-i18n="nav.home">首页</a>
+        <a href="#directions" data-nav="directions" data-i18n="nav.directions">研究方向</a>
+        <a href="#results" data-nav="results" data-i18n="nav.results">研究成果</a>
+        <a href="#members" data-nav="members" data-i18n="nav.members">研究成员</a>
+        <a href="#join" data-nav="join" data-i18n="nav.join">加入我们</a>
       </nav>
+      <div class="lang-switch" id="langSwitch" role="group" aria-label="Language / 语言">
+        <button type="button" data-lang-opt="zh">CN</button>
+        <button type="button" data-lang-opt="en">EN</button>
+      </div>
       <button class="nav-toggle" id="navToggle" aria-label="菜单">
         <i data-lucide="menu"></i>
       </button>
@@ -47,47 +62,47 @@
           <div class="blob blob-3"></div>
         </div>
         <div class="container hero-content">
-          <h1 class="hero-title">泛在知识智能研究组</h1>
-          <p class="hero-sub">Linking Ubiquities with Connected Knowledge（LUCK）</p>
-          <p class="hero-desc">
+          <h1 class="hero-title" data-i18n="home.heroTitle">泛在知识智能研究组</h1>
+          <p class="hero-sub" data-i18n="home.heroSub">Linking Ubiquities with Connected Knowledge（LUCK）</p>
+          <p class="hero-desc" data-i18n="home.heroDesc">
             泛在知识智能研究组（Linking Ubiquities with Connected Knowledge，<strong>LUCK</strong>）隶属于东南大学计算机科学与工程学院，由<strong><a href="https://jujuhoo.github.io/" target="_blank" rel="noreferrer">金嘉晖老师</a></strong>指导，研究数据智能体、大数据处理、城市计算等方向，推动智能数据应用与知识智能发展。
           </p>
           <div class="home-dirs">
-            <h2 class="home-dirs-title">研究方向</h2>
+            <h2 class="home-dirs-title" data-i18n="home.dirsTitle">研究方向</h2>
             <div class="ds-grid">
             <div class="ds-card" data-goto="dir-agent">
               <div class="ds-icon"><i data-lucide="bot"></i></div>
-              <h3>数据智能体</h3>
+              <h3 data-i18n="home.dir1.title">数据智能体</h3>
               <ul class="ds-subs">
-                <li>RAG 检索增强生成</li>
-                <li>大模型路由与定价</li>
-                <li>工具调用与记忆管理</li>
-                <li>多源知识冲突消解</li>
+                <li data-i18n="home.dir1.sub1">RAG 检索增强生成</li>
+                <li data-i18n="home.dir1.sub2">大模型路由与定价</li>
+                <li data-i18n="home.dir1.sub3">工具调用与记忆管理</li>
+                <li data-i18n="home.dir1.sub4">多源知识冲突消解</li>
               </ul>
-              <span class="ds-link">了解更多 <i data-lucide="arrow-right"></i></span>
+              <span class="ds-link"><span data-i18n="home.learnMore">了解更多</span> <i data-lucide="arrow-right"></i></span>
             </div>
             <div class="ds-card" data-goto="dir-bigdata">
               <div class="ds-icon"><i data-lucide="cpu"></i></div>
-              <h3>大数据处理</h3>
+              <h3 data-i18n="home.dir2.title">大数据处理</h3>
               <ul class="ds-subs">
-                <li>大规模图数据清洗</li>
-                <li>CPU-GPU 异构加速</li>
-                <li>分布式计算与存储优化</li>
-                <li>交通数据高效生成</li>
+                <li data-i18n="home.dir2.sub1">大规模图数据清洗</li>
+                <li data-i18n="home.dir2.sub2">CPU-GPU 异构加速</li>
+                <li data-i18n="home.dir2.sub3">分布式计算与存储优化</li>
+                <li data-i18n="home.dir2.sub4">交通数据高效生成</li>
               </ul>
-              <span class="ds-link">了解更多 <i data-lucide="arrow-right"></i></span>
+              <span class="ds-link"><span data-i18n="home.learnMore">了解更多</span> <i data-lucide="arrow-right"></i></span>
             </div>
             <div class="ds-card" data-goto="dir-urban">
               <div class="ds-icon"><i data-lucide="building-2"></i></div>
-              <h3>城市计算</h3>
+              <h3 data-i18n="home.dir3.title">城市计算</h3>
               <ul class="ds-subs">
-                <li>时空数据预测与轨迹建模</li>
-                <li>城市区域表征学习</li>
-                <li>社交网络级联预测</li>
-                <li>知识图谱与多模态融合</li>
-                <li>兴趣点推荐与语义理解</li>
+                <li data-i18n="home.dir3.sub1">时空数据预测与轨迹建模</li>
+                <li data-i18n="home.dir3.sub2">城市区域表征学习</li>
+                <li data-i18n="home.dir3.sub3">社交网络级联预测</li>
+                <li data-i18n="home.dir3.sub4">知识图谱与多模态融合</li>
+                <li data-i18n="home.dir3.sub5">兴趣点推荐与语义理解</li>
               </ul>
-              <span class="ds-link">了解更多 <i data-lucide="arrow-right"></i></span>
+              <span class="ds-link"><span data-i18n="home.learnMore">了解更多</span> <i data-lucide="arrow-right"></i></span>
             </div>
           </div>
         </div>
@@ -103,28 +118,28 @@
             <article class="news-strip">
               <div class="ns-date">2026.09</div>
               <div class="ns-body">
-                <span class="tag tag-paper">论文</span><span class="tag tag-new">New</span>
+                <span class="tag tag-paper" data-i18n="tag.paper">论文</span><span class="tag tag-new">New</span>
                 <h3>Congrats to Hanchen Qiu!🎉 The paper “Optimizing Agent Tool-Use via Trajectory-based Insight Evolution” has been accepted by NeurIPS 2026 (Poster, CCF-A, acceptance rate: 25.7%)</h3>
               </div>
             </article>
             <article class="news-strip">
               <div class="ns-date">2026.09</div>
               <div class="ns-body">
-                <span class="tag tag-paper">论文</span><span class="tag tag-new">New</span>
+                <span class="tag tag-paper" data-i18n="tag.paper">论文</span><span class="tag tag-new">New</span>
                 <h3>Congrats to Yi Hong!🎉 The paper “Effective Knowledge Conflict Detection via Joint Agentic Optimization” has been accepted by NeurIPS 2026 (Poster, CCF-A, acceptance rate: 25.7%)</h3>
               </div>
             </article>
             <article class="news-strip">
               <div class="ns-date">2026.09</div>
               <div class="ns-body">
-                <span class="tag tag-paper">论文</span><span class="tag tag-new">New</span>
+                <span class="tag tag-paper" data-i18n="tag.paper">论文</span><span class="tag tag-new">New</span>
                 <h3>Congrats to Haojia Zhu!🎉 The paper “Benchmarking Aggregation Queries over Unstructured Text” has been accepted by EMNLP 2026 Main Conference (Poster, CCF-B, acceptance rate: 15.4%)</h3>
               </div>
             </article>
             <article class="news-strip">
               <div class="ns-date">2026.07</div>
               <div class="ns-body">
-                <span class="tag tag-paper">论文</span>
+                <span class="tag tag-paper" data-i18n="tag.paper">论文</span>
                 <h3>Congrats to Anran Zhang!🎉 The paper “Give the Long-tail More SPACE: Promoting Provider Fairness in Next POI Recommendation” has been accepted by RecSys 2026 (CCF-B, acceptance rate: 18.0%)</h3>
                 <!-- <p>提出 CasUGC，将用户评论演化与级联动态进行对齐，实现更精准的流行度预测。</p> -->
               </div>
@@ -132,7 +147,7 @@
             <article class="news-strip">
               <div class="ns-date">2026.06</div>
               <div class="ns-body">
-                <span class="tag tag-paper">论文</span>
+                <span class="tag tag-paper" data-i18n="tag.paper">论文</span>
                 <h3>Congrats to Yifan Meng!🎉 The paper “CasUGC: Aligning User-Generated Comment Evolution with Cascade Dynamics for Popularity Prediction” has been accepted by IJCAI 2026 (CCF-B)</h3>
                 <!-- <p>提出 CasUGC，将用户评论演化与级联动态进行对齐，实现更精准的流行度预测。</p> -->
               </div>
@@ -140,7 +155,7 @@
             <article class="news-strip">
               <div class="ns-date">2026.05</div>
               <div class="ns-body">
-                <span class="tag tag-paper">论文</span>
+                <span class="tag tag-paper" data-i18n="tag.paper">论文</span>
                 <h3>Congrats to Xigang Sun!🎉 The paper “Eliciting Frequency-Conditioned Spatial Dynamics for Long-Term Spatio-Temporal Forecasting” has been accepted by KDD 2026 (CCF-A, acceptance rate: 18.5%)</h3>
                 <!-- <p>提出频率条件化方法，建模长期预测中的空间动态，有效提升长时序时空预测精度。</p> -->
               </div>
@@ -148,7 +163,7 @@
             <article class="news-strip">
               <div class="ns-date">2026.02</div>
               <div class="ns-body">
-                <span class="tag tag-paper">论文</span>
+                <span class="tag tag-paper" data-i18n="tag.paper">论文</span>
                 <h3>Congrats to Zhendong Guo!🎉 The paper “Pricing Online LLM Services with Data-Calibrated Stackelberg Routing Game was accepted by AAAI 2026” (Oral, CCF-A)</h3>
                 <!-- <p>提出数据校准的 Stackelberg 路由博弈框架，优化大模型在线服务定价策略。</p> -->
               </div>
@@ -156,7 +171,7 @@
             <article class="news-strip">
               <div class="ns-date">2025.10</div>
               <div class="ns-body">
-                <span class="tag tag-paper">论文</span>
+                <span class="tag tag-paper" data-i18n="tag.paper">论文</span>
                 <h3>Congrats to Siyuan Huang!🎉 The paper “IM-POI: Bridging ID and Multi-modal Representations for Next POI Recommendation” was accepted by ACM MM 2025 (CCF-A)</h3>
                 <!-- <p>提出 IM-POI，连接 ID 表征与多模态信息，获 Engagement Theme Outstanding Paper。</p> -->
               </div>
@@ -164,7 +179,7 @@
             <article class="news-strip">
               <div class="ns-date">2025.08</div>
               <div class="ns-body">
-                <span class="tag tag-paper">论文</span>
+                <span class="tag tag-paper" data-i18n="tag.paper">论文</span>
                 <h3>Congrats to Xigang Sun!🎉 The paper “Riding the Wave: Multi-Scale Spatial-Temporal Graph Learning for Highway Traffic Flow Prediction Under Overload Scenarios” was accepted by IJCAI 2025 (CCF-A)</h3>
                 <!-- <p>提出多尺度时空图学习方法，解决高速公路过载场景下的交通流预测问题。</p> -->
               </div>
@@ -172,7 +187,7 @@
             <article class="news-strip">
               <div class="ns-date">2025.06</div>
               <div class="ns-body">
-                <span class="tag tag-paper">论文</span>
+                <span class="tag tag-paper" data-i18n="tag.paper">论文</span>
                 <h3>Congrats to Wenchao Bai!🎉 The paper “Rule-Based Graph Cleaning with GPUs on a Single Machine” was accepted by SIGMOD 2025 (CCF-A)</h3>
                 <!-- <p>提出基于 GPU 加速的单机规则图数据清洗方法，显著提升图数据质量管理效率。</p> -->
               </div>
@@ -180,7 +195,7 @@
             <article class="news-strip">
               <div class="ns-date">2025.06</div>
               <div class="ns-body">
-                <span class="tag tag-paper">论文</span>
+                <span class="tag tag-paper" data-i18n="tag.paper">论文</span>
                 <h3>Congrats to Wenchao Bai!🎉 The paper “MiniClean: A Single-Machine System for Cleaning Big Graphs” was accepted by SIGMOD 2025 Demo (CCF-A)</h3>
                 <!-- <p>展示单机环境下的十亿级图数据清洗系统。</p> -->
               </div>
@@ -188,7 +203,7 @@
             <article class="news-strip">
               <div class="ns-date">2025.05</div>
               <div class="ns-body">
-                <span class="tag tag-paper">论文</span>
+                <span class="tag tag-paper" data-i18n="tag.paper">论文</span>
                 <h3>Congrats to Haojia Zhu!🎉 The paper “GER-LLM: Efficient and Effective Geospatial Entity Resolution with Large Language Model” was accepted by EMNLP 2025 (CCF-B)</h3>
                 <!-- <p>提出基于大语言模型的高效地理空间实体解析方法。</p> -->
               </div>
@@ -196,7 +211,7 @@
             <article class="news-strip">
               <div class="ns-date">2024.11</div>
               <div class="ns-body">
-                <span class="tag tag-award">竞赛</span>
+                <span class="tag tag-award" data-i18n="tag.award">竞赛</span>
                 <h3>Congrats to Haojia Zhu!🎉 The paper “Efficient Urban-Scale Traffic Data Generation” won BESC 2024 Best Student Paper Award</h3>
                 <!-- <p>面向城市规模交通流数据的生成方法研究，获评审委员会一致认可。</p> -->
               </div>
@@ -211,8 +226,8 @@
     <section class="page" data-page="directions" id="page-directions">
       <div class="container">
         <div class="section-label">What we explore</div>
-        <h2 class="section-title">主要研究方向</h2>
-        <p class="section-desc">三个研究方向紧密协作，共同推进泛在知识智能研究</p>
+        <h2 class="section-title" data-i18n="dirs.title">主要研究方向</h2>
+        <p class="section-desc" data-i18n="dirs.desc">三个研究方向紧密协作，共同推进泛在知识智能研究</p>
 
         <div class="dir-grid">
 
@@ -224,10 +239,10 @@
             </div>
             <div class="dir-body">
               <div class="dir-icon"><i data-lucide="bot"></i></div>
-              <h3>数据智能体</h3>
-              <p>研究检索增强生成（RAG）、大模型路由与定价、工具调用与记忆管理技术，打造能在真实知识环境中可靠工作的 Data Agent，实现从自然语言到结构化洞察的智能桥梁。</p>
+              <h3 data-i18n="dirs.dir1.title">数据智能体</h3>
+              <p data-i18n="dirs.dir1.desc">研究检索增强生成（RAG）、大模型路由与定价、工具调用与记忆管理技术，打造能在真实知识环境中可靠工作的 Data Agent，实现从自然语言到结构化洞察的智能桥梁。</p>
               <div class="dir-papers">
-                <h4>相关成果</h4>
+                <h4 data-i18n="dir.papers">相关成果</h4>
                 <ul>
                   <li><a href="#">Optimizing Agent Tool-Use via Trajectory-based Insight Evolution <span class="venue">NeurIPS 2026 (CCF-A)</span></a></li>
                   <li><a href="#">Effective Knowledge Conflict Detection via Joint Agentic Optimization <span class="venue">NeurIPS 2026 (CCF-A)</span></a></li>
@@ -247,10 +262,10 @@
             </div>
             <div class="dir-body">
               <div class="dir-icon"><i data-lucide="cpu"></i></div>
-              <h3>大数据处理</h3>
-              <p>面向PB级数据的计算、存储与调度优化。研究大规模图数据处理、CPU-GPU异构加速与分布式清洗系统，让复杂数据任务更快、更稳、更易用。</p>
+              <h3 data-i18n="dirs.dir2.title">大数据处理</h3>
+              <p data-i18n="dirs.dir2.desc">面向PB级数据的计算、存储与调度优化。研究大规模图数据处理、CPU-GPU异构加速与分布式清洗系统，让复杂数据任务更快、更稳、更易用。</p>
               <div class="dir-papers">
-                <h4>相关成果</h4>
+                <h4 data-i18n="dir.papers">相关成果</h4>
                 <ul>
                   <li><a href="https://doi.org/10.1145/3725303" target="_blank" rel="noreferrer">Rule-Based Graph Cleaning with GPUs on a Single Machine <span class="venue">SIGMOD 2025 (CCF-A)</span></a></li>
                   <li><a href="https://doi.org/10.1145/3722212.3725115" target="_blank" rel="noreferrer">MiniClean: A Single-Machine System for Cleaning Big Graphs <span class="venue">SIGMOD 2025 Demo</span></a></li>
@@ -268,10 +283,10 @@
             </div>
             <div class="dir-body">
               <div class="dir-icon"><i data-lucide="building-2"></i></div>
-              <h3>城市计算</h3>
-              <p>用时空数据与知识图谱理解城市运行。研究区域表征学习、交通流预测、轨迹建模、城市事件预测、知识抽取与对齐、多模态语义融合，让数据与知识共同驱动城市更高效地运转。</p>
+              <h3 data-i18n="dirs.dir3.title">城市计算</h3>
+              <p data-i18n="dirs.dir3.desc">用时空数据与知识图谱理解城市运行。研究区域表征学习、交通流预测、轨迹建模、城市事件预测、知识抽取与对齐、多模态语义融合，让数据与知识共同驱动城市更高效地运转。</p>
               <div class="dir-papers">
-                <h4>相关成果</h4>
+                <h4 data-i18n="dir.papers">相关成果</h4>
                 <ul>
                   <li><a href="#">Frequency-Conditioned Spatial Dynamics for Long-Term ST Forecasting <span class="venue">KDD 2026 (CCF-A)</span></a></li>
                   <li><a href="https://doi.org/10.1145/3711896.3737176" target="_blank" rel="noreferrer">Urban Region Pre-training and Prompting: A Graph Approach <span class="venue">KDD 2025 (CCF-A)</span></a></li>
@@ -294,11 +309,11 @@
       <div class="container">
         <div class="section-label">Selected work</div>
         <div class="results-head">
-          <h2 class="section-title">研究成果</h2>
+          <h2 class="section-title" data-i18n="results.title">研究成果</h2>
           <div class="filter-bar" role="group" aria-label="筛选成果">
-            <button class="filter-btn active" data-filter="paper">📄 论文</button>
-            <button class="filter-btn" data-filter="project">🔬 项目</button>
-            <button class="filter-btn" data-filter="award">🏆 竞赛</button>
+            <button class="filter-btn active" data-filter="paper" data-i18n="filter.paper">📄 论文</button>
+            <button class="filter-btn" data-filter="project" data-i18n="filter.project">🔬 项目</button>
+            <button class="filter-btn" data-filter="award" data-i18n="filter.award">🏆 竞赛</button>
           </div>
         </div>
 
@@ -315,7 +330,7 @@
                 <h3>Optimizing Agent Tool-Use via Trajectory-based Insight Evolution</h3>
                 <p>Hanchen Qiu, Haojia Zhu, Yifan Meng, Jiahui Jin*</p>
               </div>
-              <div class="rs-right"><span class="rs-tag">工具调用优化</span></div>
+              <div class="rs-right"><span class="rs-tag" data-i18n="tag.toolUse">工具调用优化</span></div>
             </article>
 
             <article class="result-strip" data-type="paper">
@@ -327,7 +342,7 @@
                 <h3>Effective Knowledge Conflict Detection via Joint Agentic Optimization</h3>
                 <p>Yi Hong, Wenchao Bai, Jiaqi Jiang, Siyuan Huang, Jiahui Jin*</p>
               </div>
-              <div class="rs-right"><span class="rs-tag">知识冲突检测</span></div>
+              <div class="rs-right"><span class="rs-tag" data-i18n="tag.conflict">知识冲突检测</span></div>
             </article>
 
             <article class="result-strip" data-type="paper">
@@ -339,7 +354,7 @@
                 <h3><a href="https://arxiv.org/abs/2602.01355" target="_blank" rel="noreferrer">Benchmarking Aggregation Queries over Unstructured Text</a></h3>
                 <p>Haojia Zhu, Jiahui Jin*, Haoyu Li, Qinyuan Xu, Yuxi Liu, Zihan Zhou, Hanchen Qiu, Jiaoyan Chen, Jinghui Zhang</p>
               </div>
-              <div class="rs-right"><span class="rs-tag">文本聚合查询</span></div>
+              <div class="rs-right"><span class="rs-tag" data-i18n="tag.textAgg">文本聚合查询</span></div>
             </article>
 
             <article class="result-strip" data-type="paper">
@@ -351,7 +366,7 @@
                 <h3>Eliciting Frequency-Conditioned Spatial Dynamics for Long-Term Spatio-Temporal Forecasting</h3>
                 <p>Xigang Sun, Haoyu Chen, Jiahui Jin*, Xiangguo Sun</p>
               </div>
-              <div class="rs-right"><span class="rs-tag">时空预测</span></div>
+              <div class="rs-right"><span class="rs-tag" data-i18n="tag.stForecast">时空预测</span></div>
             </article>
 
             <article class="result-strip" data-type="paper">
@@ -363,7 +378,7 @@
                 <h3>CasUGC: Aligning User-Generated Comment Evolution with Cascade Dynamics for Popularity Prediction</h3>
                 <p>Yifan Meng, Xigang Sun, Anran Zhang, Jiaqi Jiang, Jiahui Jin*</p>
               </div>
-              <div class="rs-right"><span class="rs-tag">级联预测</span></div>
+              <div class="rs-right"><span class="rs-tag" data-i18n="tag.cascade">级联预测</span></div>
             </article>
 
             <article class="result-strip" data-type="paper">
@@ -375,7 +390,7 @@
                 <h3><a href="https://doi.org/10.1609/aaai.v40i20.38748" target="_blank" rel="noreferrer">Pricing Online LLM Services with Data-Calibrated Stackelberg Routing Game</a></h3>
                 <p>Zhendong Guo, Wenchao Bai, Jiahui Jin*</p>
               </div>
-              <div class="rs-right"><span class="rs-tag">大模型定价</span><span class="rs-award-tag">Oral</span></div>
+              <div class="rs-right"><span class="rs-tag" data-i18n="tag.llmPricing">大模型定价</span><span class="rs-award-tag">Oral</span></div>
             </article>
 
             <article class="result-strip" data-type="paper">
@@ -387,7 +402,7 @@
                 <h3><a href="https://doi.org/10.1145/3711896.3737176" target="_blank" rel="noreferrer">Urban Region Pre-training and Prompting: A Graph-based Approach</a></h3>
                 <p>Jiahui Jin*, Yifan Song, Dong Kan, Haojia Zhu, Xiangguo Sun, Zhicheng Li, Xigang Sun, Jinghui Zhang</p>
               </div>
-              <div class="rs-right"><span class="rs-tag">城市区域预训练</span></div>
+              <div class="rs-right"><span class="rs-tag" data-i18n="tag.regionPretrain">城市区域预训练</span></div>
             </article>
 
             <article class="result-strip" data-type="paper">
@@ -399,7 +414,7 @@
                 <h3><a href="https://doi.org/10.1145/3746027.3754937" target="_blank" rel="noreferrer">IM-POI: Bridging ID and Multi-modal Representations for Next POI Recommendation</a></h3>
                 <p>Siyuan Huang, Jiahui Jin*, Xin Lin, Xigang Sun, Yukun Ban</p>
               </div>
-              <div class="rs-right"><span class="rs-tag">多模态推荐</span><span class="rs-award-tag">🏆 Outstanding Paper</span></div>
+              <div class="rs-right"><span class="rs-tag" data-i18n="tag.mmRec">多模态推荐</span><span class="rs-award-tag">🏆 Outstanding Paper</span></div>
             </article>
 
             <article class="result-strip" data-type="paper">
@@ -411,7 +426,7 @@
                 <h3><a href="https://doi.org/10.24963/ijcai.2025/369" target="_blank" rel="noreferrer">Riding the Wave: Multi-Scale Spatial-Temporal Graph Learning for Highway Traffic Flow Prediction Under Overload Scenarios</a></h3>
                 <p>Xigang Sun, Jiahui Jin*, Hancheng Wang, Xiangguo Sun, Xiaoliang Wang, Jun Zhu</p>
               </div>
-              <div class="rs-right"><span class="rs-tag">交通预测</span></div>
+              <div class="rs-right"><span class="rs-tag" data-i18n="tag.traffic">交通预测</span></div>
             </article>
 
             <article class="result-strip" data-type="paper">
@@ -423,7 +438,7 @@
                 <h3><a href="https://doi.org/10.1145/3725303" target="_blank" rel="noreferrer">Rule-Based Graph Cleaning with GPUs on a Single Machine</a></h3>
                 <p>Wenchao Bai, Wenfei Fan, Shuhao Liu, Kehan Pang, Xiaoke Zhu, Jiahui Jin*</p>
               </div>
-              <div class="rs-right"><span class="rs-tag">图数据清洗</span></div>
+              <div class="rs-right"><span class="rs-tag" data-i18n="tag.graphClean">图数据清洗</span></div>
             </article>
 
             <article class="result-strip" data-type="paper">
@@ -435,7 +450,7 @@
                 <h3><a href="https://doi.org/10.1145/3722212.3725115" target="_blank" rel="noreferrer">MiniClean: A Single-Machine System for Cleaning Big Graphs</a></h3>
                 <p>Wenchao Bai, Wenfei Fan, Jiahui Jin, Daji Li, Jian Li, Shuhao Liu, Mingliang Ouyang, Qiang Yuan</p>
               </div>
-              <div class="rs-right"><span class="rs-tag">图清洗系统</span></div>
+              <div class="rs-right"><span class="rs-tag" data-i18n="tag.graphCleanSys">图清洗系统</span></div>
             </article>
 
             <article class="result-strip" data-type="paper">
@@ -447,84 +462,84 @@
                 <h3><a href="https://aclanthology.org/2025.emnlp-main.1186/" target="_blank" rel="noreferrer">GER-LLM: Efficient and Effective Geospatial Entity Resolution with Large Language Model</a></h3>
                 <p>Haojia Zhu, Zhicheng Li, Jiahui Jin*</p>
               </div>
-              <div class="rs-right"><span class="rs-tag">地理实体解析</span></div>
+              <div class="rs-right"><span class="rs-tag" data-i18n="tag.geoER">地理实体解析</span></div>
             </article>
 
             <!-- Projects -->
             <article class="result-strip" data-type="project">
               <div class="rs-left">
-                <span class="rs-venue">国自然面上</span>
-                <span class="rs-status ongoing">在研</span>
+                <span class="rs-venue" data-i18n="venue.nsfcGeneral">国自然面上</span>
+                <span class="rs-status ongoing" data-i18n="status.ongoing">在研</span>
               </div>
               <div class="rs-body">
                 <h3>基于时空感知提示的城市图基础模型构建及计算方法研究</h3>
-                <p>项目负责人 · No. 62572119 · 50万 · 2026.01–2029.12</p>
+                <p data-i18n="proj.graphfm">项目负责人 · No. 62572119 · 50万 · 2026.01–2029.12</p>
               </div>
             </article>
 
             <article class="result-strip" data-type="project">
               <div class="rs-left">
-                <span class="rs-venue">科技部重点研发</span>
-                <span class="rs-status ongoing">在研</span>
+                <span class="rs-venue" data-i18n="venue.mostKeyRd">科技部重点研发</span>
+                <span class="rs-status ongoing" data-i18n="status.ongoing">在研</span>
               </div>
               <div class="rs-body">
                 <h3>双碳目标下的建筑城市一体化与立体化关键技术研究</h3>
-                <p>参与 · No. 2023YFC3804100 · 2023.12–2026.12</p>
+                <p data-i18n="proj.dualcarbon">参与 · No. 2023YFC3804100 · 2023.12–2026.12</p>
               </div>
             </article>
 
             <article class="result-strip" data-type="project">
               <div class="rs-left">
-                <span class="rs-venue">国自然重点</span>
-                <span class="rs-status ongoing">在研</span>
+                <span class="rs-venue" data-i18n="venue.nsfcKey">国自然重点</span>
+                <span class="rs-status ongoing" data-i18n="status.ongoing">在研</span>
               </div>
               <div class="rs-body">
                 <h3>物联网智能感知与溯源方法</h3>
-                <p>参与 · No. 62232004 · 294万 · 2023.01–2027.12</p>
+                <p data-i18n="proj.iot">参与 · No. 62232004 · 294万 · 2023.01–2027.12</p>
               </div>
             </article>
 
             <article class="result-strip" data-type="project">
               <div class="rs-left">
-                <span class="rs-venue">国自然面上</span>
-                <span class="rs-status closed">已结题</span>
+                <span class="rs-venue" data-i18n="venue.nsfcGeneral">国自然面上</span>
+                <span class="rs-status closed" data-i18n="status.closed">已结题</span>
               </div>
               <div class="rs-body">
                 <h3>城市知识图谱驱动的群智感知迭代演进机制及其应用研究</h3>
-                <p>项目负责人 · No. 62072099 · 57万 · 2021.01–2024.12</p>
+                <p data-i18n="proj.crowdsensing">项目负责人 · No. 62072099 · 57万 · 2021.01–2024.12</p>
               </div>
             </article>
 
             <article class="result-strip" data-type="project">
               <div class="rs-left">
-                <span class="rs-venue">科技创新2030</span>
-                <span class="rs-status closed">已结题</span>
+                <span class="rs-venue" data-i18n="venue.sti2030">科技创新2030</span>
+                <span class="rs-status closed" data-i18n="status.closed">已结题</span>
               </div>
               <div class="rs-body">
                 <h3>群体智能协同决策与持续调控方法</h3>
-                <p>子课题负责人 · No. 2018AAA0101200 · 62万 · 2019.12–2022.12</p>
+                <p data-i18n="proj.swarm">子课题负责人 · No. 2018AAA0101200 · 62万 · 2019.12–2022.12</p>
               </div>
             </article>
 
             <article class="result-strip" data-type="project">
               <div class="rs-left">
-                <span class="rs-venue">国自然青年</span>
-                <span class="rs-status closed">已结题</span>
+                <span class="rs-venue" data-i18n="venue.nsfcYoung">国自然青年</span>
+                <span class="rs-status closed" data-i18n="status.closed">已结题</span>
               </div>
               <div class="rs-body">
                 <h3>基于子图近似匹配的海量知识图谱分布式查询技术研究</h3>
-                <p>项目负责人 · No. 61702096 · 25万 · 2018.01–2020.12</p>
+                <p data-i18n="proj.subgraph">项目负责人 · No. 61702096 · 25万 · 2018.01–2020.12</p>
               </div>
             </article>
 
             <article class="result-strip" data-type="project">
               <div class="rs-left">
-                <span class="rs-venue">省自然基金</span>
-                <span class="rs-status closed">已结题</span>
+                <span class="rs-venue" data-i18n="venue.provNsf">省自然基金</span>
+                <span class="rs-status closed" data-i18n="status.closed">已结题</span>
               </div>
               <div class="rs-body">
                 <h3>面向亿级顶点知识图谱的分布式查询技术研究</h3>
-                <p>项目负责人 · No. BK20170689 · 20万 · 2017.07–2020.06</p>
+                <p data-i18n="proj.provKg">项目负责人 · No. BK20170689 · 20万 · 2017.07–2020.06</p>
               </div>
             </article>
 
@@ -551,21 +566,21 @@
 
             <article class="result-strip" data-type="award">
               <div class="rs-left">
-                <span class="rs-venue">🏆 挑战杯</span>
+                <span class="rs-venue" data-i18n="award.challengeCup">🏆 挑战杯</span>
               </div>
               <div class="rs-body">
-                <h3>2025挑战杯“揭榜挂帅”</h3>
-                <p>特等奖</p>
+                <h3 data-i18n="award.tz2025">2025挑战杯“揭榜挂帅”</h3>
+                <p data-i18n="award.grandPrize">特等奖</p>
               </div>
             </article>
 
             <article class="result-strip" data-type="award">
               <div class="rs-left">
-                <span class="rs-venue">🏆 挑战杯</span>
+                <span class="rs-venue" data-i18n="award.challengeCup">🏆 挑战杯</span>
               </div>
               <div class="rs-body">
-                <h3>2024挑战杯“揭榜挂帅”</h3>
-                <p>一等奖</p>
+                <h3 data-i18n="award.tz2024">2024挑战杯“揭榜挂帅”</h3>
+                <p data-i18n="award.firstPrize">一等奖</p>
               </div>
             </article>
 
@@ -574,8 +589,8 @@
                 <span class="rs-venue">🏆 BESC</span>
               </div>
               <div class="rs-body">
-                <h3>城市规模交通流数据高效生成</h3>
-                <p>Haojia Zhu · BESC 2024 最佳学生论文奖</p>
+                <h3 data-i18n="award.bescTitle">城市规模交通流数据高效生成</h3>
+                <p data-i18n="award.bescNote">Haojia Zhu · BESC 2024 最佳学生论文奖</p>
               </div>
             </article>
 
@@ -588,24 +603,24 @@
     <section class="page" data-page="members" id="page-members">
       <div class="container">
         <div class="section-label">People</div>
-        <h2 class="section-title">研究成员</h2>
-        <p class="section-desc">我们重视每个人的成长节奏，也珍视一起把事情做好的成就感</p>
+        <h2 class="section-title" data-i18n="members.title">研究成员</h2>
+        <p class="section-desc" data-i18n="members.desc">我们重视每个人的成长节奏，也珍视一起把事情做好的成就感</p>
 
         <div class="member-groups">
           <!-- Advisor -->
           <div class="member-group">
             <div class="group-header">
               <i data-lucide="graduation-cap"></i>
-              <h3>导师</h3>
+              <h3 data-i18n="group.advisor">导师</h3>
             </div>
             <div class="member-card advisor-card">
               <div class="advisor-info">
                 <strong>金嘉晖</strong>
-                <span class="role">副教授 · 副院长 · 博士生导师</span>
-                <span class="affil">东南大学计算机科学与工程学院</span>
+                <span class="role" data-i18n="advisor.role">副教授 · 副院长 · 博士生导师</span>
+                <span class="affil" data-i18n="common.affil">东南大学计算机科学与工程学院</span>
                 <div class="advisor-links">
                   <a href="mailto:jjin@seu.edu.cn"><i data-lucide="mail"></i> jjin@seu.edu.cn</a>
-                  <a href="https://jujuhoo.github.io/" target="_blank" rel="noreferrer"><i data-lucide="globe"></i> 导师主页</a>
+                  <a href="https://jujuhoo.github.io/" target="_blank" rel="noreferrer"><i data-lucide="globe"></i> <span data-i18n="advisor.homepage">导师主页</span></a>
                 </div>
               </div>
             </div>
@@ -615,7 +630,7 @@
           <div class="member-group">
             <div class="group-header">
               <i data-lucide="book-open"></i>
-              <h3>博士生</h3>
+              <h3 data-i18n="group.phd">博士生</h3>
             </div>
             <div class="member-list">
               <a class="member-name" href="https://bai-wenchao.github.io/" target="_blank" rel="noreferrer">白文超</a>
@@ -631,7 +646,7 @@
           <div class="member-group">
             <div class="group-header">
               <i data-lucide="users"></i>
-              <h3>硕士生</h3>
+              <h3 data-i18n="group.master">硕士生</h3>
             </div>
             <div class="member-list">
               <span class="member-name">孟一凡</span>
@@ -653,7 +668,7 @@
           <div class="member-group">
             <div class="group-header">
               <i data-lucide="rocket"></i>
-              <h3>毕业生</h3>
+              <h3 data-i18n="group.alumni">毕业生</h3>
             </div>
             <div class="member-list alumni-list">
               <span class="member-name">马然</span>
@@ -664,13 +679,13 @@
               <span class="member-name">李志成</span>
               <span class="member-name etc">……</span>
             </div>
-            <p class="alumni-note">毕业生就职于华为、腾讯、字节跳动、阿里、滴滴、美团、微软等公司，部分同学赴深圳研究院、香港等地深造。</p>
+            <p class="alumni-note" data-i18n="alumni.note">毕业生就职于华为、腾讯、字节跳动、阿里、滴滴、美团、微软等公司，部分同学赴深圳研究院、香港等地深造。</p>
           </div>
         </div>
 
         <!-- Photo Wall -->
         <div class="photo-wall">
-          <h3 class="photo-wall-title">团队剪影</h3>
+          <h3 class="photo-wall-title" data-i18n="photo.title">团队剪影</h3>
           <div class="photo-track" id="photoTrack">
             <img src="assets/tuanjian/1.jpg" alt="团建照片">
             <img src="assets/tuanjian/2.jpg" alt="团建照片">
@@ -688,7 +703,7 @@
 
         <div class="member-footer">
           <a href="https://jujuhoo.github.io/students/" target="_blank" rel="noreferrer" class="link-arrow">
-            查看完整成员信息 <i data-lucide="arrow-up-right"></i>
+            <span data-i18n="members.full">查看完整成员信息</span> <i data-lucide="arrow-up-right"></i>
           </a>
         </div>
       </div>
@@ -745,15 +760,15 @@
         <p>Linking Ubiquities with Connected Knowledge</p>
       </div>
       <div class="footer-links">
-        <a href="#home" data-nav="home">首页</a>
-        <a href="#directions" data-nav="directions">研究方向</a>
-        <a href="#results" data-nav="results">研究成果</a>
-        <a href="#members" data-nav="members">研究成员</a>
-        <a href="#join" data-nav="join">加入我们</a>
+        <a href="#home" data-nav="home" data-i18n="nav.home">首页</a>
+        <a href="#directions" data-nav="directions" data-i18n="nav.directions">研究方向</a>
+        <a href="#results" data-nav="results" data-i18n="nav.results">研究成果</a>
+        <a href="#members" data-nav="members" data-i18n="nav.members">研究成员</a>
+        <a href="#join" data-nav="join" data-i18n="nav.join">加入我们</a>
       </div>
       <div class="footer-meta">
         <p>© <span id="year"></span> LUCK Research Group</p>
-        <p>东南大学计算机科学与工程学院</p>
+        <p data-i18n="common.affil">东南大学计算机科学与工程学院</p>
       </div>
     </div>
   </footer>
