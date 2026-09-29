@@ -243,6 +243,9 @@ h1,h2,h3,h4,p{margin:0}
 /* urban card image gets side margins */
 #dir-urban .dir-visual{display:flex;align-items:center;justify-content:center}
 #dir-urban .dir-visual img{width:88%;height:92%}
+/* bigdata card image gets side margins */
+#dir-bigdata .dir-visual{display:flex;align-items:center;justify-content:center}
+#dir-bigdata .dir-visual img{width:88%;height:92%}
 .dir-card:hover .dir-visual img{transform:scale(1.08)}
 .dir-number{
   position:absolute;top:20px;left:20px;z-index:2;
