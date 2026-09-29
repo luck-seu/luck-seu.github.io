@@ -236,7 +236,7 @@ h1,h2,h3,h4,p{margin:0}
 .dir-visual{
   position:relative;min-height:300px;overflow:hidden;background:var(--line-light);
 }
-.dir-visual img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.dir-visual img{width:100%;height:100%;object-fit:contain;transition:transform .5s}
 .dir-card:hover .dir-visual img{transform:scale(1.08)}
 .dir-number{
   position:absolute;top:20px;left:20px;z-index:2;
@@ -256,7 +256,7 @@ h1,h2,h3,h4,p{margin:0}
 .dir-papers{border-top:1px solid var(--line);padding-top:18px}
 .dir-papers h4{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
 .dir-papers li{padding:7px 0;border-bottom:1px solid var(--line-light)}
-.dir-papers ul{max-height:260px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.dir-papers ul{max-height:200px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
 .dir-papers ul::-webkit-scrollbar{width:7px}
 .dir-papers ul::-webkit-scrollbar-track{background:var(--line-light);border-radius:999px}
 .dir-papers ul::-webkit-scrollbar-thumb{
